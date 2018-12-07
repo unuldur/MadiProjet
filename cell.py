@@ -17,6 +17,15 @@ class Cell(Enum):
     PLATFORM = 11
 
 
+proba_cell = dict()
+proba_cell[Cell.EMPTY] = 0.5
+proba_cell[Cell.WALL] = 0.1
+proba_cell[Cell.ENEMY] = 0.1
+proba_cell[Cell.TRAP] = 0.1
+proba_cell[Cell.CRACKS] = 0.05
+proba_cell[Cell.PORTAL] = 0.05
+proba_cell[Cell.PLATFORM] = 0.1
+
 def cell_movement(cell, dungeon, player):
     if cell == Cell.EMPTY:
         return [(1, Etat.STAY)]

@@ -1,10 +1,11 @@
 from dungeon import Dungeon
-from dungeonLoader import load_dungeon
+from dungeonLoader import *
 from gameState import GameState
 from graphics import Graphics
 from player import Player
 
 dungeon = load_dungeon("dungeon1")
+dungeon = random_dungeon_generation(8, 8)
 
 g = Graphics(400, 600)
 p = Player(dungeon.x - 1, dungeon.y - 1)
