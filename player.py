@@ -4,6 +4,7 @@ from cell import cell_movement, Cell
 import random as rand
 
 from etat import Etat
+from state import State
 
 
 class Player:
@@ -39,8 +40,11 @@ class Player:
         self.x = x
         self.y = y
 
+    def get_state(self):
+        return State(self.treasure, self.key, self.sword, (self.x, self.y))
+
     def do_move(self, input_method, dungeon):
-        next_cell = cell_movement(dungeon.dungeon[self.x, self.y], dungeon, self)
+        next_cell = cell_movement(dungeon.dungeon[self.x, self.y], dungeon, self.get_state())
         next_move = self.do_action(next_cell)
         if next_move[1] == Etat.MOVE:
             self.x = next_move[2][0]
@@ -61,7 +65,7 @@ class Player:
             dungeon.dungeon[self.x, self.y] = Cell.EMPTY
         if next_move[1] == Etat.KILL_ENEMY:
             dungeon.dungeon[self.x, self.y] = Cell.EMPTY
-        move = input_method.get_next_move()
+        move = input_method.get_next_move(self.get_state())
         if move == Movement.STOP:
             return GameState.FINISH
         if move == Movement.DOWN:

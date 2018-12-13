@@ -2,6 +2,7 @@ import pygame as pygame
 
 from cell import Cell
 from movement import Movement
+from state import State
 
 
 class Graphics:
@@ -15,6 +16,7 @@ class Graphics:
 
     def print(self, dungeon, player):
         event = pygame.event.poll()
+        pygame.time.wait(1000)
         if event.type == pygame.QUIT:
             return False
         self.window.fill((255, 255, 255))
@@ -56,7 +58,31 @@ class Graphics:
         pygame.display.flip()
         return True
 
-    def get_next_move(self):
+    def print_transition(self, dungeon, player, pdmMovement):
+        event = pygame.event.poll()
+        self.print(dungeon, player)
+        case_x = self.width / dungeon.x
+        case_y = self.height / dungeon.y
+        for i in range(dungeon.x):
+            for j in range(dungeon.y):
+                if dungeon.is_wall(i, j):
+                    continue
+                s = State(False, False, False, (i, j))
+                move = pdmMovement.get_next_move(s)
+                label = self.font.render(" ", 1, (255, 0, 0))
+                if move == Movement.TOP:
+                    label = self.font.render("^", 1, (255, 0, 0))
+                elif move == Movement.LEFT:
+                    label = self.font.render("<", 1, (255, 0, 0))
+                elif move == Movement.RIGHT:
+                    label = self.font.render(">", 1, (255, 0, 0))
+                elif move == Movement.DOWN:
+                    label = self.font.render("\/", 1, (255, 0, 0))
+                self.window.blit(label, (case_x * i + int(case_x / 2 - 10), case_y * j + 30))
+        pygame.display.flip()
+        return True
+
+    def get_next_move(self, state):
         move = None
         while move is None:
             for event in pygame.event.get():
