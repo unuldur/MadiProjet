@@ -8,6 +8,8 @@ class PdmMovement:
 
     def get_next_move(self, state):
         new_pos = self.strat[state]
+        if new_pos is None:
+            return Movement.STOP
         difx = new_pos.pos[0] - state.pos[0]
         dify = new_pos.pos[1] - state.pos[1]
         if difx == 1:

@@ -10,9 +10,16 @@ import matplotlib.pyplot as plt
 class PDM:
     class Cell:
         def __init__(self, dungeon, state):
-            self.transition = []
+            self.action = dict()
+            for (i, j) in [(0, 1), (0, -1), (-1, 0), (1, 0)]:
+                if dungeon.is_wall(state.pos[0] + i, state.pos[1] + j):
+                    continue
+                new_state = State(state.treasure, state.key, state.sword, (state.pos[0] + i, state.pos[1] + j))
+                self.action[(i, j)] = self.get_transition(dungeon, new_state)
+
+        def get_transition(self, dungeon, state):
+            transition = []
             for new_etat in cell_movement(dungeon.dungeon[state.pos], dungeon, state):
-                game_state = GameState.NONE
                 new_state = state
                 if new_etat[1] == Etat.MOVE:
                     new_state = State(state.treasure, state.key, state.sword, new_etat[2])
@@ -22,12 +29,10 @@ class PDM:
                     new_state = State(state.treasure, state.key, True, state.pos)
                 if new_etat[1] == Etat.GET_TREASURE:
                     new_state = State(True, state.key, state.sword, state.pos)
-                if new_etat[1] == Etat.WIN:
-                    game_state = GameState.WIN
                 if new_etat[1] == Etat.DEAD:
-                    game_state = GameState.DEAD
-                    new_state = State(state.treasure, state.key, state.sword, (-1, -1))
-                self.transition.append((new_etat[0], game_state, new_state))
+                    new_state = State(state.treasure, state.key, state.sword, (-9, -9))
+                transition.append((new_etat[0], new_state))
+            return transition
 
     def __init__(self, dungeon):
         self.nodes = dict()

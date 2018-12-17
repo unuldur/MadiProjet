@@ -58,8 +58,32 @@ class Graphics:
         pygame.display.flip()
         return True
 
-    def print_transition(self, dungeon, player, pdmMovement):
-        event = pygame.event.poll()
+    def print_transition(self, dungeon, player, pdmMovement, pdmValue):
+
+        t = False
+        k = False
+        s = False
+        v = False
+        finish = False
+        while not finish:
+            for event in pygame.event.get():
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_t:
+                        t = not t
+                    if event.key == pygame.K_s:
+                        s = not s
+                    if event.key == pygame.K_k:
+                        k = not k
+                    if event.key == pygame.K_SPACE:
+                        finish = True
+                    if event.key == pygame.K_v:
+                        v = not v
+                if event.type == pygame.QUIT:
+                    finish = True
+            self.print_specifique(t, k, s, v, dungeon, player, pdmMovement, pdmValue)
+        return True
+
+    def print_specifique(self, t, k, s, val, dungeon, player, pdmMovement, pdmValue):
         self.print(dungeon, player)
         case_x = self.width / dungeon.x
         case_y = self.height / dungeon.y
@@ -67,20 +91,26 @@ class Graphics:
             for j in range(dungeon.y):
                 if dungeon.is_wall(i, j):
                     continue
-                s = State(False, False, False, (i, j))
-                move = pdmMovement.get_next_move(s)
+                st = State(t, k, s, (i, j))
+                if st not in pdmMovement.strat.keys():
+                    continue
                 label = self.font.render(" ", 1, (255, 0, 0))
-                if move == Movement.TOP:
-                    label = self.font.render("^", 1, (255, 0, 0))
-                elif move == Movement.LEFT:
-                    label = self.font.render("<", 1, (255, 0, 0))
-                elif move == Movement.RIGHT:
-                    label = self.font.render(">", 1, (255, 0, 0))
-                elif move == Movement.DOWN:
-                    label = self.font.render("\/", 1, (255, 0, 0))
+                if not val:
+                    move = pdmMovement.get_next_move(st)
+                    if move == Movement.TOP:
+                        label = self.font.render("^", 1, (255, 0, 0))
+                    elif move == Movement.LEFT:
+                        label = self.font.render("<", 1, (255, 0, 0))
+                    elif move == Movement.RIGHT:
+                        label = self.font.render(">", 1, (255, 0, 0))
+                    elif move == Movement.DOWN:
+                        label = self.font.render("\/", 1, (255, 0, 0))
+                else:
+                    label = self.font.render(str(int(pdmValue[st])), 1, (255, 0, 0))
                 self.window.blit(label, (case_x * i + int(case_x / 2 - 10), case_y * j + 30))
+        label = self.font.render("t:" + str(t) + " ,k:" + str(k) + ",s:" + str(s), 1, (0, 0, 0))
+        self.window.blit(label, (0, 0))
         pygame.display.flip()
-        return True
 
     def get_next_move(self, state):
         move = None

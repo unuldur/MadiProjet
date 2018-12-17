@@ -1,3 +1,4 @@
+from cell import Cell
 from state import State
 
 
@@ -10,7 +11,7 @@ class BellmanEquation:
 
     def next_value(self, nodes_value):
         val_max = -100
-        index= -1
+        index = -1
         i = 0
         for s in self.states:
             val = self.ug
@@ -23,13 +24,14 @@ class BellmanEquation:
             i += 1
         if index >= 0:
             return val_max, self.states[index]
-        return val_max, None
+        return self.ug, None
 
 
 def iteration_algo(dungeon, pdm, gamma, e):
     bellmans = dict()
     nodes_value = dict()
     for s in pdm.nodes.keys():
+
         states = []
         for (i, j) in [(0, 1), (0, -1), (-1, 0), (1, 0)]:
             x = s.pos[0] + i
@@ -50,5 +52,5 @@ def iteration_algo(dungeon, pdm, gamma, e):
         last = nodes_value
         nodes_value = new_nodes_value
         print(nodes_value)
-    return use
+    return use, nodes_value
 
