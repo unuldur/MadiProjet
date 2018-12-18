@@ -49,6 +49,8 @@ class Graphics:
         tilePlatform = pygame.transform.scale(tilePlatform, (int(case_x), int(case_y)))
         heroImage = pygame.image.load("src/hero.png").convert_alpha()
         heroImage = pygame.transform.scale(heroImage, (int(case_x), int(case_y)))
+        heroSwordImage = pygame.image.load("src/heroSword.png").convert_alpha()
+        heroSwordImage = pygame.transform.scale(heroSwordImage, (int(case_x), int(case_y)))
 
         for i in range(dungeon.x + 1):
             pygame.draw.line(self.window, (0, 0, 0), (case_x * i, 0), (case_x * i, self.height))
@@ -81,7 +83,10 @@ class Graphics:
                     self.window.blit(tileSword, (imagePosX, imagePosY))
                 elif cell == Cell.TRAP:
                     self.window.blit(tileTrap, (imagePosX, imagePosY))
-        self.window.blit(heroImage, (case_x * player.x, case_y * player.y, case_x, case_y))
+        if player.sword:
+            self.window.blit(heroSwordImage, (case_x * player.x, case_y * player.y, case_x, case_y))
+        else:
+            self.window.blit(heroImage, (case_x * player.x, case_y * player.y, case_x, case_y))
         pygame.display.flip()
         return True
 
