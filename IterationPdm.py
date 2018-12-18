@@ -3,27 +3,25 @@ from state import State
 
 
 class BellmanEquation:
-    def __init__(self, states, ug, nodes, gamma):
-        self.states = states
+    def __init__(self, cell, ug, nodes, gamma):
+        self.cell = cell
         self.ug = ug
         self.nodes = nodes
         self.gamma = gamma
 
     def next_value(self, nodes_value):
         val_max = -100
-        index = -1
-        i = 0
-        for s in self.states:
+        index = (-9, -9)
+        for k in self.cell.action.keys():
             val = self.ug
-            if self.nodes[s] is not None:
-                for (p, _, ns) in self.nodes[s].transition:
-                    val += self.gamma * p * nodes_value[ns]
+            for (p, ns) in self.cell.action[k]:
+                val += self.gamma * p * nodes_value[ns]
             if val > val_max:
                 val_max = val
-                index = i
-            i += 1
-        if index >= 0:
-            return val_max, self.states[index]
+                index = k
+        if index != (-9, -9):
+            return val_max, State(self.cell.state.treasure, self.cell.state.key, self.cell.state.sword,
+                                  (self.cell.state.pos[0] + index[0], self.cell.state.pos[1] + index[1]))
         return self.ug, None
 
 
@@ -31,15 +29,7 @@ def iteration_algo(dungeon, pdm, gamma, e):
     bellmans = dict()
     nodes_value = dict()
     for s in pdm.nodes.keys():
-
-        states = []
-        for (i, j) in [(0, 1), (0, -1), (-1, 0), (1, 0)]:
-            x = s.pos[0] + i
-            y = s.pos[1] + j
-            if dungeon.is_wall(x, y):
-                continue
-            states.append(State(s.treasure, s.key, s.sword, (x, y)))
-        bellmans[s] = BellmanEquation(states, s.evaluate(dungeon), pdm.nodes, gamma)
+        bellmans[s] = BellmanEquation(pdm.nodes[s], s.evaluate(dungeon), pdm.nodes, gamma)
         nodes_value[s] = 0
     use = dict()
     last = None

@@ -7,7 +7,7 @@ from player import Player
 from IterationPdm import *
 
 dungeon = load_dungeon("dungeon1")
-dungeon = random_dungeon_generation(4, 4)
+#dungeon = random_dungeon_generation(4, 4)
 pdm = PDM(dungeon)
 strat, value = iteration_algo(dungeon, pdm, 1, 0.001)
 pdmMove = PdmMovement(strat)
@@ -28,4 +28,5 @@ while g.print(dungeon, p) and not finish:
     if gameState == GameState.FINISH:
         print("Stop game")
         finish = True
+
 

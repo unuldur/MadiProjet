@@ -42,7 +42,7 @@ def cell_movement(cell, dungeon, state):
     if cell == Cell.ENEMY:
         return [(0.7, Etat.KILL_ENEMY), (0.3, Etat.DEAD)] if not state.sword else [(1, Etat.KILL_ENEMY)]
     if cell == Cell.TRAP:
-        return [(0.1, Etat.DEAD), (0.3, Etat.MOVE, (dungeon.x - 1, dungeon.y - 1)), (0.6, Etat.STAY)]
+        return [(0.6, Etat.STAY), (0.1, Etat.DEAD), (0.3, Etat.MOVE, (dungeon.x - 1, dungeon.y - 1))]
     if cell == Cell.PLATFORM:
         nb_wall = 0
         possible_cell = []
