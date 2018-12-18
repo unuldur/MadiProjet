@@ -119,6 +119,7 @@ class Graphics:
         self.print(dungeon, player)
         case_x = self.width / dungeon.x
         case_y = self.height / dungeon.y
+        color = (255, 255, 255)
         for i in range(dungeon.x):
             for j in range(dungeon.y):
                 if dungeon.is_wall(i, j):
@@ -126,21 +127,21 @@ class Graphics:
                 st = State(t, k, s, (i, j))
                 if st not in pdmMovement.strat.keys():
                     continue
-                label = self.font.render(" ", 1, (255, 0, 0))
+                label = self.font.render(" ", 1, color)
                 if not val:
                     move = pdmMovement.get_next_move(st)
                     if move == Movement.TOP:
-                        label = self.font.render("^", 1, (255, 0, 0))
+                        label = self.font.render("^", 1, color)
                     elif move == Movement.LEFT:
-                        label = self.font.render("<", 1, (255, 0, 0))
+                        label = self.font.render("<", 1, color)
                     elif move == Movement.RIGHT:
-                        label = self.font.render(">", 1, (255, 0, 0))
+                        label = self.font.render(">", 1,  color)
                     elif move == Movement.DOWN:
-                        label = self.font.render("\/", 1, (255, 0, 0))
+                        label = self.font.render("\/", 1, color)
                 else:
-                    label = self.font.render(str(int(pdmValue[st])), 1, (255, 0, 0))
+                    label = self.font.render(str(int(pdmValue[st])), 1, color)
                 self.window.blit(label, (case_x * i + int(case_x / 2 - 10), case_y * j + 30))
-        label = self.font.render("t:" + str(t) + " ,k:" + str(k) + ",s:" + str(s), 1, (0, 0, 0))
+        label = self.font.render("t:" + str(t) + " ,k:" + str(k) + ",s:" + str(s), 1, color)
         self.window.blit(label, (0, 0))
         pygame.display.flip()
 
