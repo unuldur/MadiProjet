@@ -12,7 +12,7 @@ pdm = PDM(dungeon)
 strat, value = iteration_algo(dungeon, pdm, 1, 0.001)
 pdmMove = PdmMovement(strat)
 #pdm.print()
-g = Graphics(400, 600)
+g = Graphics(800, 1000)
 p = Player(dungeon.x - 1, dungeon.y - 1)
 g.print_transition(dungeon, p, pdmMove, value)
 finish = False
