@@ -70,7 +70,7 @@ class Graphics:
                 elif cell == Cell.CRACKS:
                     self.window.blit(tileCrack, (imagePosX, imagePosY))
                 elif cell == Cell.ENEMY:
-                    self.window.blit(tileEmpty, (imagePosX, imagePosY))
+                    self.window.blit(tileEnemy, (imagePosX, imagePosY))
                 elif cell == Cell.KEY:
                     self.window.blit(tileKey, (imagePosX, imagePosY))
                 elif cell == Cell.PLATFORM:
