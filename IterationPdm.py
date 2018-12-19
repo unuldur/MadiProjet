@@ -9,19 +9,20 @@ class BellmanEquation:
         self.nodes = nodes
         self.gamma = gamma
 
-    def next_value(self, nodes_value):
+    def next_value(self, nodes_value, dungeon):
         val_max = -100
-        index = (-9, -9)
+        index = None
         for k in self.cell.action.keys():
-            val = self.ug
+            new_state = State(self.cell.state.treasure, self.cell.state.key, self.cell.state.sword,
+                  (self.cell.state.pos[0] + k[0], self.cell.state.pos[1] + k[1]))
+            val = new_state.evaluate(dungeon) - 1
             for (p, ns) in self.cell.action[k]:
                 val += self.gamma * p * nodes_value[ns]
             if val > val_max:
                 val_max = val
-                index = k
-        if index != (-9, -9):
-            return val_max, State(self.cell.state.treasure, self.cell.state.key, self.cell.state.sword,
-                                  (self.cell.state.pos[0] + index[0], self.cell.state.pos[1] + index[1]))
+                index = new_state
+        if index is not None:
+            return val_max, index
         return self.ug, None
 
 
@@ -36,7 +37,7 @@ def iteration_algo(dungeon, pdm, gamma, e):
     for i in range(100):
         new_nodes_value = dict()
         for s in bellmans.keys():
-            v, ns = bellmans[s].next_value(nodes_value)
+            v, ns = bellmans[s].next_value(nodes_value, dungeon)
             new_nodes_value[s] = v
             use[s] = ns
         last = nodes_value

@@ -209,7 +209,7 @@ class Graphics:
             self.print(dungeon, player)
             self.print_PDM_strat(dungeon, player, pdmMovement, pdmValue)
         return True
-
+        
     def get_next_move(self, state):
         move = None
         while move is None:

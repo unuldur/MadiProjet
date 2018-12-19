@@ -27,9 +27,10 @@ class State:
 
     def evaluate(self, dungeon):
         if self.pos[0] == dungeon.x - 1 and self.pos[1] == dungeon.y - 1 and self.treasure:
-            return 200
+            return 10000
         if self.pos == (-9, -9):
-            return -200
+            return -1000
+        return 0
         if self.key and not self.treasure:
             return -(dungeon.dist(dungeon.find_key(), self.pos) + dungeon.dist_start_key())
         if self.treasure:
