@@ -27,13 +27,8 @@ class State:
 
     def evaluate(self, dungeon):
         if self.pos[0] == dungeon.x - 1 and self.pos[1] == dungeon.y - 1 and self.treasure:
-            return 10000
-        if self.pos == (-9, -9):
-            return -1000
-        return 0
-        if self.key and not self.treasure:
-            return -(dungeon.dist(dungeon.find_key(), self.pos) + dungeon.dist_start_key())
-        if self.treasure:
-            return -(dungeon.dist((0, 0), self.pos) + dungeon.dist_start_key() + dungeon.dist_key_treasure())
-        return -dungeon.dist((dungeon.x - 1, dungeon.y - 1), self.pos)
-
+            return 1000000
+        # The adventurer is dead
+        elif self.pos == (-9, -9):
+            return -100000
+        return -1
