@@ -15,8 +15,7 @@ def print_PDM(dungeon, g, gurobi = False):
     g.print(dungeon, p)
     pdm = PDM(dungeon)
     if gurobi:
-        blablablablabl = 0
-        # ICI METTRE LE CALCUL DU PDM PAR GUROBI !!!!!!!!!!!!!
+        strat, value = pl_algo(dungeon, pdm, 0.9)
     else:
         strat, value = iteration_algo(dungeon, pdm, 1, 0.001)
     pdmMove = PdmMovement(strat)
@@ -81,7 +80,6 @@ def main():
     else:
         g.print_footer("Welcome to Magic Maze, use keyboard arrows to play.")
         print_playerInput(dungeon, g)
-
     time.sleep(3)
 
 main()
