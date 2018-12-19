@@ -9,14 +9,71 @@ class Graphics:
 
     def __init__(self, height, width):
         pygame.init()
-        self.window = pygame.display.set_mode((width, height))
+        self.window = pygame.display.set_mode((width, height + 60))
         self.height = height
         self.width = width
         self.font = pygame.font.SysFont("arial", 20)
+        self.footerText = ""
+
+    def print_footer(self, message):
+        if (message != self.footerText):
+            self.footerText = message
+        pygame.draw.rect(self.window, (220, 220, 220), ((0, self.height), (self.width, 60)))
+        text = self.font.render(message, 1, (0, 0, 0))
+        self.window.blit(text, (int(self.width / 2 - text.get_rect().width / 2), 
+            int(self.height + 30 - text.get_rect().height / 2)))
+        pygame.display.flip()
+
+    def print_message(self, message):
+        pygame.draw.rect(self.window, (220, 220, 220), ((0, int(self.height / 2) - 30), (self.width, 60)))
+        text = self.font.render(message, 1, (0, 0, 0))
+        self.window.blit(text, (int(self.width / 2 - text.get_rect().width / 2), 
+            int(self.height / 2) - text.get_rect().height / 2))
+        pygame.display.flip()
+
+    def print_arrow(self, move, headX, headY, size):
+        head = (headX, headY)
+        leftWing = 0
+        rightWing = 0
+        leftTopBase = 0
+        leftBotBase = 0
+        rightTopBase = 0
+        rightBotBase = 0
+        if move == Movement.RIGHT:
+            leftWing = (head[0] - int(size / 3), head[1] - int(size / 2))
+            rightWing = (head[0] - int(size / 3), head[1] + int(size / 2))
+            leftTopBase = (head[0] - size, head[1] - int(size / 6))
+            leftBotBase = (head[0] - int(size / 3), head[1] - int(size / 6))
+            rightTopBase = (head[0] - size, head[1] + int(size / 6))
+            rightBotBase = (head[0] - int(size / 3), head[1] + int(size / 6))
+        elif move == Movement.DOWN:
+            leftWing = (head[0] + int(size / 2), head[1] - int(size / 3))
+            rightWing = (head[0] - int(size / 2), head[1] - int(size / 3))
+            leftTopBase = (head[0] + int(size / 6), head[1] - size)
+            leftBotBase = (head[0] + int(size / 6), head[1] - int(size / 3))
+            rightTopBase = (head[0] - int(size / 6), head[1] - size)
+            rightBotBase = (head[0] - int(size / 6), head[1] - int(size / 3))
+        elif move == Movement.TOP:
+            leftWing = (head[0] - int(size / 2), head[1] + int(size / 3))
+            rightWing = (head[0] + int(size / 2), head[1] + int(size / 3))
+            leftTopBase = (head[0] - int(size / 6), head[1] + size)
+            leftBotBase = (head[0] - int(size / 6), head[1] + int(size / 3))
+            rightTopBase = (head[0] + int(size / 6), head[1] + size)
+            rightBotBase = (head[0] + int(size / 6), head[1] + int(size / 3))
+        elif move == Movement.LEFT:
+            leftWing = (head[0] + int(size / 3), head[1] - int(size / 2))
+            rightWing = (head[0] + int(size / 3), head[1] + int(size / 2))
+            leftTopBase = (head[0] + size, head[1] - int(size / 6))
+            leftBotBase = (head[0] + int(size / 3), head[1] - int(size / 6))
+            rightTopBase = (head[0] + size, head[1] + int(size / 6))
+            rightBotBase = (head[0] + int(size / 3), head[1] + int(size / 6))
+
+        pygame.draw.polygon(self.window, (250, 0, 0), 
+            (leftTopBase, rightTopBase, rightBotBase, rightWing, head, leftWing, leftBotBase))
+
+
 
     def print(self, dungeon, player):
-
-
         event = pygame.event.poll()
         pygame.time.wait(1000)
         if event.type == pygame.QUIT:
@@ -51,6 +108,10 @@ class Graphics:
         heroImage = pygame.transform.scale(heroImage, (int(case_x), int(case_y)))
         heroSwordImage = pygame.image.load("src/heroSword.png").convert_alpha()
         heroSwordImage = pygame.transform.scale(heroSwordImage, (int(case_x), int(case_y)))
+        heroTreasureImage = pygame.image.load("src/heroTreasure.png").convert_alpha()
+        heroTreasureImage = pygame.transform.scale(heroTreasureImage, (int(case_x), int(case_y)))
+        heroTreasureSwordImage = pygame.image.load("src/heroTreasureSword.png").convert_alpha()
+        heroTreasureSwordImage = pygame.transform.scale(heroTreasureSwordImage, (int(case_x), int(case_y)))
 
         for i in range(dungeon.x + 1):
             pygame.draw.line(self.window, (0, 0, 0), (case_x * i, 0), (case_x * i, self.height))
@@ -84,14 +145,47 @@ class Graphics:
                 elif cell == Cell.TRAP:
                     self.window.blit(tileTrap, (imagePosX, imagePosY))
         if player.sword:
-            self.window.blit(heroSwordImage, (case_x * player.x, case_y * player.y, case_x, case_y))
+            if player.treasure:
+                self.window.blit(heroTreasureSwordImage, (case_x * player.x, case_y * player.y, case_x, case_y))
+            else:
+                self.window.blit(heroSwordImage, (case_x * player.x, case_y * player.y, case_x, case_y))
+        elif player.treasure:
+            self.window.blit(heroTreasureImage, (case_x * player.x, case_y * player.y, case_x, case_y))
         else:
             self.window.blit(heroImage, (case_x * player.x, case_y * player.y, case_x, case_y))
+        self.print_footer(self.footerText)
         pygame.display.flip()
         return True
 
-    def print_transition(self, dungeon, player, pdmMovement, pdmValue):
+    def print_PDM_strat(self, dungeon, player, pdmMovement):
+        case_x = self.width / dungeon.x
+        case_y = self.height / dungeon.y
+        for i in range(dungeon.x):
+            for j in range(dungeon.y):
+                if dungeon.is_wall(i, j):
+                    continue
+                st = State(player.treasure, player.key, player.sword, (i, j))
+                if st not in pdmMovement.strat.keys():
+                    continue
+                move = pdmMovement.get_next_move(st)
+                deltaX = 0
+                deltaY = 0
+                if move == Movement.TOP:
+                    deltaX = int(case_x / 2)
+                    deltaY = 2
+                elif move == Movement.LEFT:
+                    deltaX = 2
+                    deltaY = int(case_y / 2)
+                elif move == Movement.RIGHT:
+                    deltaX = case_x - 2
+                    deltaY = int(case_y / 2)
+                elif move == Movement.DOWN:
+                    deltaX = int(case_x / 2)
+                    deltaY = case_y - 2
+                self.print_arrow(move, case_x * i + deltaX, case_y * j + deltaY, 18)
+        pygame.display.flip()
 
+    def print_transition(self, dungeon, player, pdmMovement, pdmValue):
         t = False
         k = False
         s = False
@@ -112,37 +206,9 @@ class Graphics:
                         v = not v
                 if event.type == pygame.QUIT:
                     finish = True
-            self.print_specifique(t, k, s, v, dungeon, player, pdmMovement, pdmValue)
+            self.print(dungeon, player)
+            self.print_PDM_strat(dungeon, player, pdmMovement, pdmValue)
         return True
-
-    def print_specifique(self, t, k, s, val, dungeon, player, pdmMovement, pdmValue):
-        self.print(dungeon, player)
-        case_x = self.width / dungeon.x
-        case_y = self.height / dungeon.y
-        for i in range(dungeon.x):
-            for j in range(dungeon.y):
-                if dungeon.is_wall(i, j):
-                    continue
-                st = State(t, k, s, (i, j))
-                if st not in pdmMovement.strat.keys():
-                    continue
-                label = self.font.render(" ", 1, (255, 0, 0))
-                if not val:
-                    move = pdmMovement.get_next_move(st)
-                    if move == Movement.TOP:
-                        label = self.font.render("^", 1, (255, 0, 0))
-                    elif move == Movement.LEFT:
-                        label = self.font.render("<", 1, (255, 0, 0))
-                    elif move == Movement.RIGHT:
-                        label = self.font.render(">", 1, (255, 0, 0))
-                    elif move == Movement.DOWN:
-                        label = self.font.render("\/", 1, (255, 0, 0))
-                else:
-                    label = self.font.render(str(int(pdmValue[st])), 1, (255, 0, 0))
-                self.window.blit(label, (case_x * i + int(case_x / 2 - 10), case_y * j + 30))
-        label = self.font.render("t:" + str(t) + " ,k:" + str(k) + ",s:" + str(s), 1, (0, 0, 0))
-        self.window.blit(label, (0, 0))
-        pygame.display.flip()
 
     def get_next_move(self, state):
         move = None

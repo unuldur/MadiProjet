@@ -22,7 +22,7 @@ class State:
                and self.pos == other.pos and self.dead == other.dead
 
     def __hash__(self) -> int:
-        return 2*hash(self.pos) + 4*hash(self.sword) + 8 * hash(self.treasure) + 16 * hash(self.key) \
+        return 2 * hash(self.pos) + 4 * hash(self.sword) + 8 * hash(self.treasure) + 16 * hash(self.key) \
                + 32 * hash(self.dead)
 
     def evaluate(self, dungeon):
