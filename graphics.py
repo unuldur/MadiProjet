@@ -1,4 +1,4 @@
-import pygame as pygame
+import pygame
 
 from cell import Cell
 from movement import Movement
@@ -7,13 +7,47 @@ from state import State
 
 class Graphics:
 
-    def __init__(self, height, width):
+    def __init__(self, height, width, dungeon):
         pygame.init()
         self.window = pygame.display.set_mode((width, height + 60))
         self.height = height
         self.width = width
+        self.case_x = self.width / dungeon.x
+        self.case_y = self.height / dungeon.y
+
         self.font = pygame.font.SysFont("arial", 20)
         self.footerText = ""
+        self.pictures = {}
+        self.pictures["start"] = pygame.image.load("src/tileStart.jpg").convert()
+        self.pictures["start"] = pygame.transform.scale(self.pictures["start"], (int(self.case_x), int(self.case_y)))
+        self.pictures["empty"] = pygame.image.load("src/tileEmpty.jpg").convert()
+        self.pictures["empty"] = pygame.transform.scale(self.pictures["empty"], (int(self.case_x), int(self.case_y)))
+        self.pictures["wall"] = pygame.image.load("src/tileWall.jpg").convert()
+        self.pictures["wall"] = pygame.transform.scale(self.pictures["wall"], (int(self.case_x), int(self.case_y)))
+        self.pictures["enemy"] = pygame.image.load("src/tileEnemy.jpg").convert()
+        self.pictures["enemy"] = pygame.transform.scale(self.pictures["enemy"], (int(self.case_x), int(self.case_y)))
+        self.pictures["trap"] = pygame.image.load("src/tileTrap.jpg").convert()
+        self.pictures["trap"] = pygame.transform.scale(self.pictures["trap"], (int(self.case_x), int(self.case_y)))
+        self.pictures["crack"] = pygame.image.load("src/tileCrack.jpg").convert()
+        self.pictures["crack"] = pygame.transform.scale(self.pictures["crack"], (int(self.case_x), int(self.case_y)))
+        self.pictures["treasure"] = pygame.image.load("src/tileTreasure.jpg").convert()
+        self.pictures["treasure"] = pygame.transform.scale(self.pictures["treasure"], (int(self.case_x), int(self.case_y)))
+        self.pictures["sword"] = pygame.image.load("src/tileSword.jpg").convert()
+        self.pictures["sword"] = pygame.transform.scale(self.pictures["sword"], (int(self.case_x), int(self.case_y)))
+        self.pictures["key"] = pygame.image.load("src/tileKey.jpg").convert()
+        self.pictures["key"] = pygame.transform.scale(self.pictures["key"], (int(self.case_x), int(self.case_y)))
+        self.pictures["portal"] = pygame.image.load("src/tilePortal.jpg").convert()
+        self.pictures["portal"] = pygame.transform.scale(self.pictures["portal"], (int(self.case_x), int(self.case_y)))
+        self.pictures["platform"] = pygame.image.load("src/tilePlatform.jpg").convert()
+        self.pictures["platform"] = pygame.transform.scale(self.pictures["platform"], (int(self.case_x), int(self.case_y)))
+        self.pictures["hero"] = pygame.image.load("src/hero.png").convert_alpha()
+        self.pictures["hero"] = pygame.transform.scale(self.pictures["hero"], (int(self.case_x), int(self.case_y)))
+        self.pictures["heroSword"] = pygame.image.load("src/heroSword.png").convert_alpha()
+        self.pictures["heroSword"] = pygame.transform.scale(self.pictures["heroSword"], (int(self.case_x), int(self.case_y)))
+        self.pictures["heroTreasure"] = pygame.image.load("src/heroTreasure.png").convert_alpha()
+        self.pictures["heroTreasure"] = pygame.transform.scale(self.pictures["heroTreasure"], (int(self.case_x), int(self.case_y)))
+        self.pictures["heroTreasureSword"] = pygame.image.load("src/heroTreasureSword.png").convert_alpha()
+        self.pictures["heroTreasureSword"] = pygame.transform.scale(self.pictures["heroTreasureSword"], (int(self.case_x), int(self.case_y)))
 
     def print_footer(self, message):
         if (message != self.footerText):
@@ -71,95 +105,58 @@ class Graphics:
         pygame.draw.polygon(self.window, (250, 0, 0), 
             (leftTopBase, rightTopBase, rightBotBase, rightWing, head, leftWing, leftBotBase))
 
-
-
     def print(self, dungeon, player):
         event = pygame.event.poll()
         pygame.time.wait(1000)
         if event.type == pygame.QUIT:
             return False
         self.window.fill((255, 255, 255))
-        case_x = self.width / dungeon.x
-        case_y = self.height / dungeon.y
-
-        tileStart = pygame.image.load("src/tileStart.jpg").convert()
-        tileStart = pygame.transform.scale(tileStart, (int(case_x), int(case_y)))
-        tileEmpty = pygame.image.load("src/tileEmpty.jpg").convert()
-        tileEmpty = pygame.transform.scale(tileEmpty, (int(case_x), int(case_y)))
-        tileWall = pygame.image.load("src/tileWall.jpg").convert()
-        tileWall = pygame.transform.scale(tileWall, (int(case_x), int(case_y)))
-        tileEnemy = pygame.image.load("src/tileEnemy.jpg").convert()
-        tileEnemy = pygame.transform.scale(tileEnemy, (int(case_x), int(case_y)))
-        tileTrap = pygame.image.load("src/tileTrap.jpg").convert()
-        tileTrap = pygame.transform.scale(tileTrap, (int(case_x), int(case_y)))
-        tileCrack = pygame.image.load("src/tileCrack.jpg").convert()
-        tileCrack = pygame.transform.scale(tileCrack, (int(case_x), int(case_y)))
-        tileTreasure = pygame.image.load("src/tileTreasure.jpg").convert()
-        tileTreasure = pygame.transform.scale(tileTreasure, (int(case_x), int(case_y)))
-        tileSword = pygame.image.load("src/tileSword.jpg").convert()
-        tileSword = pygame.transform.scale(tileSword, (int(case_x), int(case_y)))
-        tileKey = pygame.image.load("src/tileKey.jpg").convert()
-        tileKey = pygame.transform.scale(tileKey, (int(case_x), int(case_y)))
-        tilePortal = pygame.image.load("src/tilePortal.jpg").convert()
-        tilePortal = pygame.transform.scale(tilePortal, (int(case_x), int(case_y)))
-        tilePlatform = pygame.image.load("src/tilePlatform.jpg").convert()
-        tilePlatform = pygame.transform.scale(tilePlatform, (int(case_x), int(case_y)))
-        heroImage = pygame.image.load("src/hero.png").convert_alpha()
-        heroImage = pygame.transform.scale(heroImage, (int(case_x), int(case_y)))
-        heroSwordImage = pygame.image.load("src/heroSword.png").convert_alpha()
-        heroSwordImage = pygame.transform.scale(heroSwordImage, (int(case_x), int(case_y)))
-        heroTreasureImage = pygame.image.load("src/heroTreasure.png").convert_alpha()
-        heroTreasureImage = pygame.transform.scale(heroTreasureImage, (int(case_x), int(case_y)))
-        heroTreasureSwordImage = pygame.image.load("src/heroTreasureSword.png").convert_alpha()
-        heroTreasureSwordImage = pygame.transform.scale(heroTreasureSwordImage, (int(case_x), int(case_y)))
 
         for i in range(dungeon.x + 1):
-            pygame.draw.line(self.window, (0, 0, 0), (case_x * i, 0), (case_x * i, self.height))
+            pygame.draw.line(self.window, (0, 0, 0), (self.case_x * i, 0), (self.case_x * i, self.height))
         for i in range(dungeon.y + 1):
-            pygame.draw.line(self.window, (0, 0, 0), (0, case_y * i), (self.width, case_y * i))
+            pygame.draw.line(self.window, (0, 0, 0), (0, self.case_y * i), (self.width, self.case_y * i))
         for i in range(dungeon.x):
             for j in range(dungeon.y):
                 cell = dungeon.dungeon[i, j]
-                imagePosX = case_x * i
-                imagePosY = case_y * j
+                imagePosX = self.case_x * i
+                imagePosY = self.case_y * j
                 if cell == Cell.WALL:
-                    self.window.blit(tileWall, (imagePosX, imagePosY))
+                    self.window.blit(self.pictures["wall"], (imagePosX, imagePosY))
                 elif cell == Cell.EMPTY:
-                    self.window.blit(tileEmpty, (imagePosX, imagePosY))
+                    self.window.blit(self.pictures["empty"], (imagePosX, imagePosY))
                 elif cell == Cell.START:
-                    self.window.blit(tileStart, (imagePosX, imagePosY))
+                    self.window.blit(self.pictures["start"], (imagePosX, imagePosY))
                 elif cell == Cell.TREASURE:
-                    self.window.blit(tileTreasure, (imagePosX, imagePosY))
+                    self.window.blit(self.pictures["treasure"], (imagePosX, imagePosY))
                 elif cell == Cell.CRACKS:
-                    self.window.blit(tileCrack, (imagePosX, imagePosY))
+                    self.window.blit(self.pictures["crack"], (imagePosX, imagePosY))
                 elif cell == Cell.ENEMY:
-                    self.window.blit(tileEnemy, (imagePosX, imagePosY))
+                    self.window.blit(self.pictures["enemy"], (imagePosX, imagePosY))
                 elif cell == Cell.KEY:
-                    self.window.blit(tileKey, (imagePosX, imagePosY))
+                    self.window.blit(self.pictures["key"], (imagePosX, imagePosY))
                 elif cell == Cell.PLATFORM:
-                    self.window.blit(tilePlatform, (imagePosX, imagePosY))
+                    self.window.blit(self.pictures["platform"], (imagePosX, imagePosY))
                 elif cell == Cell.PORTAL:
-                    self.window.blit(tilePortal, (imagePosX, imagePosY))
+                    self.window.blit(self.pictures["portal"], (imagePosX, imagePosY))
                 elif cell == Cell.SWORD:
-                    self.window.blit(tileSword, (imagePosX, imagePosY))
+                    self.window.blit(self.pictures["sword"], (imagePosX, imagePosY))
                 elif cell == Cell.TRAP:
-                    self.window.blit(tileTrap, (imagePosX, imagePosY))
+                    self.window.blit(self.pictures["trap"], (imagePosX, imagePosY))
         if player.sword:
             if player.treasure:
-                self.window.blit(heroTreasureSwordImage, (case_x * player.x, case_y * player.y, case_x, case_y))
+                self.window.blit(self.pictures["heroTreasureSword"], (self.case_x * player.x, self.case_y * player.y, self.case_x, self.case_y))
             else:
-                self.window.blit(heroSwordImage, (case_x * player.x, case_y * player.y, case_x, case_y))
+                self.window.blit(self.pictures["heroSword"], (self.case_x * player.x, self.case_y * player.y, self.case_x, self.case_y))
         elif player.treasure:
-            self.window.blit(heroTreasureImage, (case_x * player.x, case_y * player.y, case_x, case_y))
+            self.window.blit(self.pictures["heroTreasure"], (self.case_x * player.x, self.case_y * player.y, self.case_x, self.case_y))
         else:
-            self.window.blit(heroImage, (case_x * player.x, case_y * player.y, case_x, case_y))
+            self.window.blit(self.pictures["hero"], (self.case_x * player.x, self.case_y * player.y, self.case_x, self.case_y))
         self.print_footer(self.footerText)
         pygame.display.flip()
         return True
 
     def print_PDM_strat(self, dungeon, player, pdmMovement):
-        case_x = self.width / dungeon.x
-        case_y = self.height / dungeon.y
         for i in range(dungeon.x):
             for j in range(dungeon.y):
                 if dungeon.is_wall(i, j):
@@ -171,45 +168,20 @@ class Graphics:
                 deltaX = 0
                 deltaY = 0
                 if move == Movement.TOP:
-                    deltaX = int(case_x / 2)
+                    deltaX = int(self.case_x / 2)
                     deltaY = 2
                 elif move == Movement.LEFT:
                     deltaX = 2
-                    deltaY = int(case_y / 2)
+                    deltaY = int(self.case_y / 2)
                 elif move == Movement.RIGHT:
-                    deltaX = case_x - 2
-                    deltaY = int(case_y / 2)
+                    deltaX = self.case_x - 2
+                    deltaY = int(self.case_y / 2)
                 elif move == Movement.DOWN:
-                    deltaX = int(case_x / 2)
-                    deltaY = case_y - 2
-                self.print_arrow(move, case_x * i + deltaX, case_y * j + deltaY, 18)
+                    deltaX = int(self.case_x / 2)
+                    deltaY = self.case_y - 2
+                self.print_arrow(move, self.case_x * i + deltaX, self.case_y * j + deltaY, 18)
         pygame.display.flip()
 
-    def print_transition(self, dungeon, player, pdmMovement, pdmValue):
-        t = False
-        k = False
-        s = False
-        v = False
-        finish = False
-        while not finish:
-            for event in pygame.event.get():
-                if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_t:
-                        t = not t
-                    if event.key == pygame.K_s:
-                        s = not s
-                    if event.key == pygame.K_k:
-                        k = not k
-                    if event.key == pygame.K_SPACE:
-                        finish = True
-                    if event.key == pygame.K_v:
-                        v = not v
-                if event.type == pygame.QUIT:
-                    finish = True
-            self.print(dungeon, player)
-            self.print_PDM_strat(dungeon, player, pdmMovement, pdmValue)
-        return True
-        
     def get_next_move(self, state):
         move = None
         while move is None:
