@@ -28,7 +28,7 @@ class State:
     def evaluate(self, dungeon):
         if self.pos[0] == dungeon.x - 1 and self.pos[1] == dungeon.y - 1 and self.treasure:
             return 1000000
-        # The adventurer is dead
         elif self.pos == (-9, -9):
+            # The adventurer is dead
             return -100000
         return -1

@@ -15,6 +15,7 @@ def print_PDM(dungeon, g, gurobi = False):
     g.print(dungeon, p)
     pdm = PDM(dungeon)
     if gurobi:
+        blablablablabl = 0
         # ICI METTRE LE CALCUL DU PDM PAR GUROBI !!!!!!!!!!!!!
     else:
         strat, value = iteration_algo(dungeon, pdm, 1, 0.001)
@@ -74,6 +75,9 @@ def main():
     if (args['pdmIteVal']):
         g.print_footer("Welcome to Magic Maze, you are looking at the moves computed by the PDM resolution.")
         print_PDM(dungeon, g)
+    elif (args['pdmGurobi']):
+        g.print_footer("Welcome to Magic Maze, you are looking at the moves computed by the PDM resolution.")
+        print_PDM(dungeon, g, True)
     else:
         g.print_footer("Welcome to Magic Maze, use keyboard arrows to play.")
         print_playerInput(dungeon, g)

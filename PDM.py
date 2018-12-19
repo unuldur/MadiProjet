@@ -1,4 +1,3 @@
-from final_node import FinalNode
 from gameState import GameState
 from state import State
 from cell import *

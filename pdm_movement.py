@@ -1,6 +1,5 @@
 from movement import Movement
 
-
 class PdmMovement:
 
     def __init__(self, strat):

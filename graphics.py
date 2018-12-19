@@ -9,13 +9,13 @@ class Graphics:
 
     def __init__(self, height, width, dungeon):
         pygame.init()
-        self.window = pygame.display.set_mode((width, height + 60))
+        self.window = pygame.display.set_mode((width, height + int(height / 10)))
         self.height = height
         self.width = width
         self.case_x = self.width / dungeon.x
         self.case_y = self.height / dungeon.y
 
-        self.font = pygame.font.SysFont("arial", 20)
+        self.font = pygame.font.SysFont("arial", min(20, int(width / 50)))
         self.footerText = ""
         self.pictures = {}
         self.pictures["start"] = pygame.image.load("src/tileStart.jpg").convert()
@@ -52,20 +52,22 @@ class Graphics:
     def print_footer(self, message):
         if (message != self.footerText):
             self.footerText = message
-        pygame.draw.rect(self.window, (220, 220, 220), ((0, self.height), (self.width, 60)))
+        pygame.draw.rect(self.window, (220, 220, 220), ((0, self.height), (self.width, int(self.height / 10))))
         text = self.font.render(message, 1, (0, 0, 0))
         self.window.blit(text, (int(self.width / 2 - text.get_rect().width / 2), 
-            int(self.height + 30 - text.get_rect().height / 2)))
+            int(self.height + int(self.height / 20) - text.get_rect().height / 2)))
         pygame.display.flip()
 
     def print_message(self, message):
-        pygame.draw.rect(self.window, (220, 220, 220), ((0, int(self.height / 2) - 30), (self.width, 60)))
+        pygame.draw.rect(self.window, (220, 220, 220), ((0, int(self.height / 2) - int(self.height / 20)), (self.width, int(self.height / 10))))
         text = self.font.render(message, 1, (0, 0, 0))
         self.window.blit(text, (int(self.width / 2 - text.get_rect().width / 2), 
             int(self.height / 2) - text.get_rect().height / 2))
         pygame.display.flip()
 
     def print_arrow(self, move, headX, headY, size):
+        if move == Movement.STOP:
+            return
         head = (headX, headY)
         leftWing = 0
         rightWing = 0
@@ -101,13 +103,12 @@ class Graphics:
             leftBotBase = (head[0] + int(size / 3), head[1] - int(size / 6))
             rightTopBase = (head[0] + size, head[1] + int(size / 6))
             rightBotBase = (head[0] + int(size / 3), head[1] + int(size / 6))
-
         pygame.draw.polygon(self.window, (250, 0, 0), 
             (leftTopBase, rightTopBase, rightBotBase, rightWing, head, leftWing, leftBotBase))
 
     def print(self, dungeon, player):
         event = pygame.event.poll()
-        pygame.time.wait(1000)
+        pygame.time.wait(500)
         if event.type == pygame.QUIT:
             return False
         self.window.fill((255, 255, 255))
