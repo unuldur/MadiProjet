@@ -1,6 +1,6 @@
 from cell import Cell
 from state import State
-
+from gurobipy import *
 
 class BellmanEquation:
     def __init__(self, cell, ug, nodes, gamma):
@@ -25,6 +25,18 @@ class BellmanEquation:
             return val_max, index
         return self.ug, None
 
+    def get_contraints(self, variables, dungeon):
+        contraints = []
+        for k in self.cell.action.keys():
+            new_state = State(self.cell.state.treasure, self.cell.state.key, self.cell.state.sword,
+                              (self.cell.state.pos[0] + k[0], self.cell.state.pos[1] + k[1]))
+            ctr = LinExpr()
+            ctr += new_state.evaluate(dungeon) - 1
+            for (p, ns) in self.cell.action[k]:
+                ctr += self.gamma * p * variables[ns]
+            contraints.append(ctr)
+        return contraints
+
 
 def iteration_algo(dungeon, pdm, gamma, e):
     bellmans = dict()
@@ -44,4 +56,38 @@ def iteration_algo(dungeon, pdm, gamma, e):
         nodes_value = new_nodes_value
         print(nodes_value)
     return use, nodes_value
+
+
+def pl_algo(dungeon, pdm, gamma):
+    model = Model("PDM solver")
+    variables = dict()
+    bellmans = []
+    obj = LinExpr()
+    for s in pdm.nodes.keys():
+        v = model.addVar(vtype=GRB.CONTINUOUS, name=str(s))
+        obj += v
+        variables[s] = v
+        bellmans.append((BellmanEquation(pdm.nodes[s], s.evaluate(dungeon), pdm.nodes, gamma), s))
+    model.setObjective(obj, GRB.MINIMIZE)
+    for (b, s) in bellmans:
+        contraints = b.get_contraints(variables, dungeon)
+        for c in contraints:
+            model.addConstr(variables[s] >= c)
+    model.optimize()
+    node_value = dict()
+    for v in model.getVars():
+        state = None
+        for k in variables.keys():
+            if v.varName == variables[k].varName:
+                state = k
+                break
+        node_value[state] = v.x
+
+    use = dict()
+    for (b, s) in bellmans:
+        _, n = b.next_value(node_value, dungeon)
+        use[s] = n
+    return use, node_value
+
+
 

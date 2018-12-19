@@ -9,7 +9,10 @@ import time
 
 def print_PDM(dungeon, g):
     pdm = PDM(dungeon)
-    strat, value = iteration_algo(dungeon, pdm, 1, 0.001)
+    strat, value = pl_algo(dungeon, pdm, 0.9)
+    #strat, value = iteration_algo(dungeon, pdm, 0.9, 0.001)
+    for k in value.keys():
+        print(str(k) + " : " + str(value[k]))
     pdmMove = PdmMovement(strat)
     p = Player(dungeon.x - 1, dungeon.y - 1)
     finish = False
@@ -27,10 +30,11 @@ def print_PDM(dungeon, g):
             g.print_message("The game has stopped unexpectedly.")
             finish = True
 
+
 # dungeon = load_dungeon("dungeon1")
 dungeon = random_dungeon_generation(6, 6)
 
-g = Graphics(800, 1000)
+g = Graphics(400, 500)
 g.print_footer("Welcome to Magic Maze, press space to lauch the program.")
 
 print_PDM(dungeon, g)
