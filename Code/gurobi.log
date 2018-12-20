@@ -200,3 +200,154 @@ Iteration    Objective       Primal Inf.    Dual Inf.      Time
 Solved with barrier
 Solved in 930 iterations and 3.12 seconds
 Optimal objective  4.584704912e+09
+
+Gurobi 7.5.1 (linux64, Python) logging started Thu Dec 20 17:21:44 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 4336 rows, 1456 columns and 56140 nonzeros
+Coefficient statistics:
+  Matrix range     [5e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+06]
+
+Concurrent LP optimizer: dual simplex and barrier
+Showing barrier log only...
+
+Presolve removed 72 rows and 426 columns
+Presolve time: 0.06s
+Presolved: 1384 rows, 3910 columns, 52494 nonzeros
+
+Ordering time: 0.01s
+
+Barrier statistics:
+ Dense cols : 288
+ AA' NZ     : 4.702e+04
+ Factor NZ  : 8.928e+04 (roughly 3 MBytes of memory)
+ Factor Ops : 5.481e+06 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   8.34072244e+08  4.32426830e+08  5.54e+02 3.04e+06  1.82e+08     0s
+   1   1.03377853e+09  3.04204521e+10  3.27e+02 2.48e+06  1.00e+08     0s
+   2   1.77667146e+08  3.76961861e+10  6.14e+00 3.57e-08  1.09e+07     0s
+   3   3.75279967e+08  1.04764186e+10  4.10e-13 2.16e-08  2.58e+06     0s
+   4   6.68976079e+08  6.26880418e+09  4.19e-13 1.50e-08  1.43e+06     0s
+   5   1.15855303e+09  3.66259149e+09  3.18e-13 7.70e-09  6.40e+05     0s
+   6   1.63021209e+09  2.74578438e+09  7.86e-14 4.83e-09  2.85e+05     0s
+   7   1.91937015e+09  2.23744174e+09  1.88e-13 2.41e-09  8.13e+04     0s
+   8   2.00957292e+09  2.10078597e+09  3.20e-13 2.88e-09  2.33e+04     0s
+   9   2.02891354e+09  2.06489982e+09  2.21e-13 3.18e-09  9.20e+03     0s
+  10   2.04199961e+09  2.04915832e+09  3.19e-13 7.00e-09  1.83e+03     0s
+  11   2.04375328e+09  2.04442209e+09  3.42e-14 2.26e-09  1.71e+02     0s
+  12   2.04387446e+09  2.04394196e+09  5.20e-14 1.91e-09  1.73e+01     0s
+  13   2.04388449e+09  2.04388623e+09  4.35e-14 2.23e-09  4.43e-01     0s
+  14   2.04388577e+09  2.04388578e+09  5.42e-14 3.43e-09  4.43e-04     0s
+  15   2.04388578e+09  2.04388578e+09  5.13e-11 4.25e-09  4.43e-07     0s
+  16   2.04388578e+09  2.04388578e+09  4.83e-11 6.09e-02  4.43e-07     0s
+
+Barrier solved model in 16 iterations and 0.17 seconds
+Optimal objective 2.04388578e+09
+
+Crossover log...
+
+       0 DPushes remaining with DInf 1.5380891e-07                 0s
+
+     150 PPushes remaining with PInf 0.0000000e+00                 0s
+       0 PPushes remaining with PInf 0.0000000e+00                 0s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 1.5998177e-07      0s
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+     157    2.0438858e+09   0.000000e+00   0.000000e+00      0s
+     157    2.0438858e+09   0.000000e+00   0.000000e+00      0s
+
+Solved with barrier
+Solved in 157 iterations and 0.24 seconds
+Optimal objective  2.043885775e+09
+
+Gurobi 7.5.1 (linux64, Python) logging started Thu Dec 20 17:29:05 2018
+
+
+Gurobi 7.5.1 (linux64, Python) logging started Thu Dec 20 17:49:07 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 19 rows, 9 columns and 42 nonzeros
+Coefficient statistics:
+  Matrix range     [3e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 2e+00]
+Presolve time: 0.00s
+Presolved: 19 rows, 9 columns, 42 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  0.000000000e+00
+
+Gurobi 7.5.1 (linux64, Python) logging started Thu Dec 20 17:49:54 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 19 rows, 9 columns and 42 nonzeros
+Coefficient statistics:
+  Matrix range     [3e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 2e+00]
+Presolve time: 0.00s
+Presolved: 19 rows, 9 columns, 42 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds
+Optimal objective  0.000000000e+00
+
+Gurobi 7.5.1 (linux64, Python) logging started Thu Dec 20 17:49:58 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 41 rows, 19 columns and 106 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve time: 0.00s
+Presolved: 41 rows, 19 columns, 106 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.000000e+10   0.000000e+00      0s
+      19    6.2316990e+11   0.000000e+00   0.000000e+00      0s
+
+Solved in 19 iterations and 0.00 seconds
+Optimal objective  6.231698986e+11
+Warning: unscaled primal violation = 3.8147e-06 and residual = 3.8147e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Thu Dec 20 17:50:24 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 27 rows, 15 columns and 68 nonzeros
+Coefficient statistics:
+  Matrix range     [3e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve time: 0.00s
+Presolved: 27 rows, 15 columns, 68 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.000000e+10   0.000000e+00      0s
+      15    4.5257153e+11   0.000000e+00   0.000000e+00      0s
+
+Solved in 15 iterations and 0.00 seconds
+Optimal objective  4.525715342e+11
+Warning: unscaled primal violation = 7.62939e-06 and residual = 7.62939e-06

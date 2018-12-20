@@ -121,7 +121,7 @@ def get_next_player_state(cell, dungeon, state):
     if cell == Cell.CRACKS:
         return [(1, PlayerState.DEAD)]
     if cell == Cell.ENEMY:
-        return [(0.7, PlayerState.KILL_ENEMY), (0.3, PlayerState.DEAD)] if not state.sword else [(1, PlayerState.KILL_ENEMY)]
+        return [(0.7, PlayerState.STAY), (0.3, PlayerState.DEAD)] if not state.sword else [(1, PlayerState.STAY)]
     if cell == Cell.TRAP:
         return [(0.6, PlayerState.STAY), (0.1, PlayerState.DEAD), (0.3, PlayerState.MOVE, (dungeon.x - 1, dungeon.y - 1))]
     if cell == Cell.PLATFORM:
@@ -140,7 +140,7 @@ def get_next_player_state(cell, dungeon, state):
         possible_cell = []
         for i in range(dungeon.x):
             for j in range(dungeon.y):
-                if not dungeon.is_wall(i, j) and i != state.pos[0] and j != state.pos[1]:
+                if not dungeon.is_wall(i, j) and (i, j) != state.pos:
                     nb_wall_not += 1
                     possible_cell.append((i, j))
         res = []
@@ -186,7 +186,7 @@ def get_next_game_state(cell, cellPos, dungeon, state):
         possible_states = []
         for i in range(dungeon.x):
             for j in range(dungeon.y):
-                if not dungeon.is_wall(i, j) and i != cellPos[0] and j != cellPos[1]:
+                if not dungeon.is_wall(i, j) and (i, j) != state.pos:
                     possible_states.append(State(state.treasure, state.key, state.sword, (i, j)))
         res = []
         for s in possible_states:
