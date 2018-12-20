@@ -164,10 +164,10 @@ def get_next_game_state(cell, cellPos, dungeon, state):
     elif cell == Cell.CRACKS:
         return [(1, State(state.treasure, state.key, state.sword, (-9, -9)))]
     elif cell == Cell.ENEMY and state.sword:
+        return [(1, State(state.treasure, state.key, state.sword, cellPos))]
+    elif cell == Cell.ENEMY:
         return [(0.7, State(state.treasure, state.key, state.sword, cellPos)), \
         (0.3, State(state.treasure, state.key, state.sword, (-9, -9)))] 
-    elif cell == Cell.ENEMY:
-        return [(1, State(state.treasure, state.key, state.sword, cellPos))]
     elif cell == Cell.TRAP:
         return [(0.6, State(state.treasure, state.key, state.sword, cellPos)), \
         (0.1, State(state.treasure, state.key, state.sword, (-9, -9))), \
