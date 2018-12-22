@@ -3,6 +3,7 @@ from enum import IntEnum
 import numpy as np
 import random as rand
 
+# A cell of the dungeon
 class Cell(IntEnum):
     START = 1
     EMPTY = 2
@@ -16,6 +17,7 @@ class Cell(IntEnum):
     PORTAL = 10
     PLATFORM = 11
 
+# Returns the probability of creationg a certain type of cell during random dungeon creation
 def get_creation_proba_cell(c):
     if c == Cell.EMPTY:
         return 0.4
@@ -34,22 +36,18 @@ def get_creation_proba_cell(c):
     else:
         return 0
 
+# The class of the dungeon defined by its size (x, y) and a grid a cells
 class Dungeon:
     def __init__(self, x, y):
         self.x = x
         self.y = y
         self.cells = np.tile(Cell.EMPTY, [x, y])
 
+    # Returns true if the position (x, y) is a wall or is outside the dungeon
     def is_wall(self, x, y):
         return x < 0 or x >= self.x or y < 0 or y >= self.y or self.cells[x, y] == Cell.WALL
 
-    def find_key(self):
-        for i in range(self.x):
-            for j in range(self.y):
-                if self.cells[i, j] == Cell.KEY:
-                    return i, j
-        return None
-
+# Create a dungeon based on a dungeon file
 def load_dungeon(file):
     with open(file, "r") as file:
         i = 0
@@ -83,21 +81,26 @@ def load_dungeon(file):
             j += 1
         return dungeon
 
+# Create a dungeon at random 
 def random_dungeon_generation(x, y):
     d = Dungeon(x, y)
+    # Treasure at top left corner and start at bottom right corner
     d.cells[0, 0] = Cell.TREASURE
     d.cells[x - 1, y - 1] = Cell.START
+    # Key and sword in other empty cells
     d.cells[choose_pos(d)] = Cell.KEY
     d.cells[choose_pos(d)] = Cell.SWORD
+    # Fill the empty cells
     for i in range(x):
         for j in range(y):
-            if d.cells[i, j] != Cell.EMPTY:
-                continue
-            d.cells[i, j] = choose_cell()
+            if d.cells[i, j] == Cell.EMPTY:
+                d.cells[i, j] = choose_cell()
+    # Test if the dungeon has a solution, if not generates a new one
     if not test_dungeon(d):
         return random_dungeon_generation(x, y)
     return d
 
+# Choose a cell at random given their probability of creation
 def choose_cell():
     p = rand.random()
     sump = 0
@@ -107,6 +110,7 @@ def choose_cell():
             return k
     return Cell.EMPTY
 
+# Choose an empty position of the dungeon
 def choose_pos(dungeon):
     x = rand.randint(0, dungeon.x - 1)
     y = rand.randint(0, dungeon.y - 1)
@@ -115,25 +119,28 @@ def choose_pos(dungeon):
         y = rand.randint(0, dungeon.y - 1)
     return x, y
 
+# Test if the dungeon has a solution: there exists a path from start to key to treasure to start
 def test_dungeon(dungeon):
     if dungeon.cells[dungeon.x - 1, dungeon.y - 1] != Cell.START or dungeon.cells[0, 0] != Cell.TREASURE:
         return False
-    points_ok = [(0, 0)]
-    points = [(0, 0)]
+    cellsToTest = [(0, 0)]
+    checkedCells = [(0, 0)]
     access_start = False
     access_key = False
-    while len(points_ok) > 0 and (not access_key or not access_start):
-        point = points_ok.pop()
+    while len(cellsToTest) > 0 and (not access_key or not access_start):
+        currentCell = cellsToTest.pop()
         for i, j in [(-1, 0), (1, 0), (0, 1), (0, -1)]:
-            point_test = (point[0] + i, point[1] + j)
-            if point_test in points:
+            testingCell = (currentCell[0] + i, currentCell[1] + j)
+            # If we already checked the cell, we skip it
+            if testingCell in checkedCells:
                 continue
-            points.append(point_test)
-            if dungeon.is_wall(point_test[0], point_test[1]) or dungeon.cells[point_test[0], point_test[1]] == Cell.CRACKS:
+            checkedCells.append(testingCell)
+            # If it is impossible to pass through the cell (wall or crack), we skip it
+            if dungeon.is_wall(testingCell[0], testingCell[1]) or dungeon.cells[testingCell[0], testingCell[1]] == Cell.CRACKS:
                 continue
-            if dungeon.cells[point_test] == Cell.KEY:
+            if dungeon.cells[testingCell] == Cell.KEY:
                 access_key = True
-            if dungeon.cells[point_test] == Cell.START:
+            if dungeon.cells[testingCell] == Cell.START:
                 access_start = True
-            points_ok.append(point_test)
+            cellsToTest.append(testingCell)
     return access_start and access_key

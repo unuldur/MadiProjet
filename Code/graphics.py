@@ -1,21 +1,24 @@
-import pygame
-
 from dungeon import Cell
 from player import Movement
 from state import State
+import pygame
 
+# Graphic class that handles all that everything displayed
 class Graphics:
-
     def __init__(self, height, width, dungeon):
         pygame.init()
+        # Set the size of the window with additional space for the footer
         self.window = pygame.display.set_mode((width, height + int(height / 10)))
         self.height = height
         self.width = width
+        # Set the size of a cell
         self.case_x = self.width / dungeon.x
         self.case_y = self.height / dungeon.y
 
+        # Set the font used for text
         self.font = pygame.font.SysFont("arial", min(20, int(width / 50)))
         self.footerText = ""
+        # Load all the pictures used
         self.pictures = {}
         self.pictures["start"] = pygame.image.load("resources/tileStart.jpg").convert()
         self.pictures["start"] = pygame.transform.scale(self.pictures["start"], (int(self.case_x), int(self.case_y)))
@@ -48,6 +51,7 @@ class Graphics:
         self.pictures["heroTreasureSword"] = pygame.image.load("resources/heroTreasureSword.png").convert_alpha()
         self.pictures["heroTreasureSword"] = pygame.transform.scale(self.pictures["heroTreasureSword"], (int(self.case_x), int(self.case_y)))
 
+    # Print a message in the footer
     def print_footer(self, message):
         if (message != self.footerText):
             self.footerText = message
@@ -57,6 +61,7 @@ class Graphics:
             int(self.height + int(self.height / 20) - text.get_rect().height / 2)))
         pygame.display.flip()
 
+    # Print a message in the middle of the screen
     def print_message(self, message):
         pygame.draw.rect(self.window, (220, 220, 220), ((0, int(self.height / 2) - int(self.height / 20)), (self.width, int(self.height / 10))))
         text = self.font.render(message, 1, (0, 0, 0))
@@ -64,6 +69,7 @@ class Graphics:
             int(self.height / 2) - text.get_rect().height / 2))
         pygame.display.flip()
 
+    # Print an arrow indicating direction move with its in position (headX, headY) of size size
     def print_arrow(self, move, headX, headY, size):
         if move == Movement.STOP:
             return
@@ -105,9 +111,10 @@ class Graphics:
         pygame.draw.polygon(self.window, (250, 0, 0), 
             (leftTopBase, rightTopBase, rightBotBase, rightWing, head, leftWing, leftBotBase))
 
+    # Print the dungeon and the player position
     def print(self, dungeon, player):
         event = pygame.event.poll()
-        pygame.time.wait(500)
+        pygame.time.wait(50)
         if event.type == pygame.QUIT:
             return False
         self.window.fill((255, 255, 255))
@@ -143,6 +150,7 @@ class Graphics:
                     self.window.blit(self.pictures["sword"], (imagePosX, imagePosY))
                 elif cell == Cell.TRAP:
                     self.window.blit(self.pictures["trap"], (imagePosX, imagePosY))
+        # Use the right player image given what he has picked
         if player.sword:
             if player.treasure:
                 self.window.blit(self.pictures["heroTreasureSword"], (self.case_x * player.x, self.case_y * player.y, self.case_x, self.case_y))
@@ -156,6 +164,7 @@ class Graphics:
         pygame.display.flip()
         return True
 
+    # Print the PDM stategy: arrow in each cell that indicates the movment played in this cell
     def print_PDM_strat(self, dungeon, player, pdmMovement):
         for i in range(dungeon.x):
             for j in range(dungeon.y):
@@ -181,7 +190,20 @@ class Graphics:
                     deltaY = self.case_y - 2
                 self.print_arrow(move, self.case_x * i + deltaX, self.case_y * j + deltaY, 18)
         pygame.display.flip()
+        self.print(dungeon, player)
 
+    # Print the value of each cell, can only be used with a qlearning pdm
+    def print_PDM_values(self, dungeon, player, pdm):
+        for i in range(dungeon.x):
+            for j in range(dungeon.y):
+                if dungeon.is_wall(i, j):
+                    continue
+                st = State(player.treasure, player.key, player.sword, (i, j))
+                text = self.font.render(str(pdm.nodes[st].getMaxAction()[1]), 1, (255, 0, 0))
+                self.window.blit(text, (self.case_x * i + 7, self.case_y * j + 7))
+        pygame.display.flip()
+
+    # Returns the move played by the player when using user's commands
     def get_next_move(self, state):
         move = None
         while move is None:

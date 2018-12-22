@@ -351,3 +351,3043 @@ Iteration    Objective       Primal Inf.    Dual Inf.      Time
 Solved in 15 iterations and 0.00 seconds
 Optimal objective  4.525715342e+11
 Warning: unscaled primal violation = 7.62939e-06 and residual = 7.62939e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 13:39:22 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 179 rows, 82 columns and 649 nonzeros
+Coefficient statistics:
+  Matrix range     [4e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 18 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 161 rows, 76 columns, 574 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.000000e+10   0.000000e+00      0s
+Extra one simplex iteration after uncrush
+      54    4.1849720e+11   0.000000e+00   0.000000e+00      0s
+
+Solved in 54 iterations and 0.00 seconds
+Optimal objective  4.184972033e+11
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 13:40:18 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 326 rows, 126 columns and 765 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 33 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 293 rows, 120 columns, 643 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.000000e+10   0.000000e+00      0s
+     142    1.4600032e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 142 iterations and 0.00 seconds
+Optimal objective  1.460003167e+12
+Warning: unscaled primal violation = 7.62939e-06 and residual = 7.62939e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 13:43:43 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 474 rows, 161 columns and 1926 nonzeros
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 33 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 441 rows, 155 columns, 1740 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.000000e+10   0.000000e+00      0s
+     268    1.5988289e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 268 iterations and 0.01 seconds
+Optimal objective  1.598828906e+12
+Warning: unscaled primal violation = 3.8147e-06 and residual = 3.8147e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 13:44:04 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 411 rows, 149 columns and 1536 nonzeros
+Coefficient statistics:
+  Matrix range     [4e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 12 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 399 rows, 143 columns, 1440 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   4.000000e+10   0.000000e+00      0s
+     194    2.8731468e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 194 iterations and 0.00 seconds
+Optimal objective  2.873146750e+12
+Warning: unscaled primal violation = 7.62939e-06 and residual = 7.62939e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 13:44:37 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 446 rows, 161 columns and 1023 nonzeros
+Coefficient statistics:
+  Matrix range     [9e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 6 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 440 rows, 155 columns, 958 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   4.000000e+10   0.000000e+00      0s
+     186    2.9339306e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 186 iterations and 0.00 seconds
+Optimal objective  2.933930564e+12
+Warning: unscaled primal violation = 3.8147e-06 and residual = 3.8147e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 13:44:43 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 172 rows, 85 columns and 521 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 0 rows and 4 columns
+Presolve time: 0.00s
+Presolved: 172 rows, 81 columns, 509 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.000000e+10   0.000000e+00      0s
+      76    7.5292617e+11   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  7.529261682e+11
+Warning: unscaled primal violation = 3.8147e-06 and residual = 3.8147e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 16:49:24 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 70 rows, 35 columns and 193 nonzeros
+Coefficient statistics:
+  Matrix range     [9e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 0 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 70 rows, 29 columns, 174 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.000000e+10   0.000000e+00      0s
+      41    9.6215009e+11   0.000000e+00   0.000000e+00      0s
+
+Solved in 41 iterations and 0.00 seconds
+Optimal objective  9.621500943e+11
+Warning: unscaled primal violation = 3.8147e-06 and residual = 3.8147e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 18:35:24 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 67 rows, 32 columns and 149 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 2e+00]
+Presolve removed 5 rows and 4 columns
+Presolve time: 0.01s
+Presolved: 62 rows, 28 columns, 139 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+       0    0.0000000e+00   0.000000e+00   0.000000e+00      0s
+
+Solved in 0 iterations and 0.01 seconds
+Optimal objective  0.000000000e+00
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 18:35:36 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 152 rows, 63 columns and 363 nonzeros
+Coefficient statistics:
+  Matrix range     [9e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 0 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 152 rows, 57 columns, 323 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   3.000000e+10   0.000000e+00      0s
+      64    1.6167931e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 64 iterations and 0.00 seconds
+Optimal objective  1.616793052e+12
+Warning: unscaled primal violation = 3.8147e-06 and residual = 3.8147e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 18:36:07 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 183 rows, 71 columns and 738 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 0 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 183 rows, 65 columns, 712 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   4.000000e+10   0.000000e+00      0s
+Extra 27 simplex iterations after uncrush
+     115    1.9143662e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 115 iterations and 0.00 seconds
+Optimal objective  1.914366185e+12
+Warning: unscaled primal violation = 1.52588e-05 and residual = 1.52588e-05
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 18:36:10 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 151 rows, 65 columns and 551 nonzeros
+Coefficient statistics:
+  Matrix range     [7e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 0 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 151 rows, 59 columns, 533 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.000000e+10   0.000000e+00      0s
+     102    1.6161575e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 102 iterations and 0.00 seconds
+Optimal objective  1.616157502e+12
+Warning: unscaled primal violation = 1.14441e-05 and residual = 1.14441e-05
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 18:36:15 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 151 rows, 61 columns and 557 nonzeros
+Coefficient statistics:
+  Matrix range     [6e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 14 rows and 5 columns
+Presolve time: 0.00s
+Presolved: 137 rows, 56 columns, 476 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   3.000000e+10   0.000000e+00      0s
+Extra 13 simplex iterations after uncrush
+      73    1.4110211e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 73 iterations and 0.00 seconds
+Optimal objective  1.411021117e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.52588e-05
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 18:36:19 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 120 rows, 55 columns and 299 nonzeros
+Coefficient statistics:
+  Matrix range     [9e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 0 rows and 5 columns
+Presolve time: 0.00s
+Presolved: 120 rows, 50 columns, 275 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.000000e+10   0.000000e+00      0s
+      59    9.9584678e+11   0.000000e+00   0.000000e+00      0s
+
+Solved in 59 iterations and 0.00 seconds
+Optimal objective  9.958467842e+11
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 18:36:25 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 235 rows, 89 columns and 602 nonzeros
+Coefficient statistics:
+  Matrix range     [9e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 0 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 235 rows, 83 columns, 524 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.000000e+10   0.000000e+00      0s
+      90    1.0124463e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 90 iterations and 0.00 seconds
+Optimal objective  1.012446310e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 18:36:30 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 167 rows, 68 columns and 398 nonzeros
+Coefficient statistics:
+  Matrix range     [9e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 0 rows and 5 columns
+Presolve time: 0.00s
+Presolved: 167 rows, 63 columns, 362 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.000000e+10   0.000000e+00      0s
+Extra one simplex iteration after uncrush
+      73    1.3166640e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 73 iterations and 0.00 seconds
+Optimal objective  1.316663992e+12
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 18:36:34 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 141 rows, 68 columns and 309 nonzeros
+Coefficient statistics:
+  Matrix range     [3e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 0 rows and 3 columns
+Presolve time: 0.00s
+Presolved: 141 rows, 65 columns, 282 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.000000e+10   0.000000e+00      0s
+Extra one simplex iteration after uncrush
+      76    1.4173285e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.417328524e+12
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 18:36:37 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 133 rows, 59 columns and 342 nonzeros
+Coefficient statistics:
+  Matrix range     [9e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 0 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 133 rows, 53 columns, 294 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   4.000000e+10   0.000000e+00      0s
+     291    6.4127644e+11   0.000000e+00   0.000000e+00      0s
+
+Solved in 291 iterations and 0.00 seconds
+Optimal objective  6.412764380e+11
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 18:44:08 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 237 rows, 89 columns and 826 nonzeros
+Coefficient statistics:
+  Matrix range     [5e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 18 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 219 rows, 83 columns, 738 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.000000e+10   0.000000e+00      0s
+Extra 15 simplex iterations after uncrush
+     106    1.5128286e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 106 iterations and 0.00 seconds
+Optimal objective  1.512828584e+12
+Warning: unscaled primal violation = 1.09673e-05 and residual = 1.09673e-05
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 18:44:20 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 271 rows, 101 columns and 1310 nonzeros
+Coefficient statistics:
+  Matrix range     [1e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 6 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 265 rows, 95 columns, 1223 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   4.000000e+10   0.000000e+00      0s
+Extra 15 simplex iterations after uncrush
+     123    2.0735664e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 123 iterations and 0.00 seconds
+Optimal objective  2.073566428e+12
+Warning: unscaled primal violation = 1.07884e-05 and residual = 1.07884e-05
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 18:48:17 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 228 rows, 95 columns and 500 nonzeros
+Coefficient statistics:
+  Matrix range     [9e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 4 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 224 rows, 89 columns, 461 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   4.000000e+10   0.000000e+00      0s
+     105    1.6782332e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 105 iterations and 0.00 seconds
+Optimal objective  1.678233160e+12
+Warning: unscaled primal violation = 3.8147e-06 and residual = 7.62939e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 18:49:03 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 186 rows, 80 columns and 947 nonzeros
+Coefficient statistics:
+  Matrix range     [1e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 14 rows and 5 columns
+Presolve time: 0.00s
+Presolved: 172 rows, 75 columns, 851 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.000000e+10   0.000000e+00      0s
+      96    7.4490732e+11   0.000000e+00   0.000000e+00      0s
+
+Solved in 96 iterations and 0.00 seconds
+Optimal objective  7.449073199e+11
+Warning: unscaled primal violation = 7.62939e-06 and residual = 8.22544e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 18:49:14 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 258 rows, 107 columns and 663 nonzeros
+Coefficient statistics:
+  Matrix range     [9e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 12 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 246 rows, 101 columns, 564 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.000000e+10   0.000000e+00      0s
+Extra 2 simplex iterations after uncrush
+     141    1.2799176e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 141 iterations and 0.00 seconds
+Optimal objective  1.279917641e+12
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 18:49:18 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 262 rows, 101 columns and 626 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 10 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 252 rows, 95 columns, 579 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.000000e+10   0.000000e+00      0s
+     178    1.8316183e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 178 iterations and 0.00 seconds
+Optimal objective  1.831618253e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 3.8147e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 18:49:31 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 107 rows, 46 columns and 250 nonzeros
+Coefficient statistics:
+  Matrix range     [9e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 17 rows and 4 columns
+Presolve time: 0.00s
+Presolved: 90 rows, 42 columns, 198 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.000000e+10   0.000000e+00      0s
+      50    8.5579887e+11   0.000000e+00   0.000000e+00      0s
+
+Solved in 50 iterations and 0.00 seconds
+Optimal objective  8.557988706e+11
+Warning: unscaled primal violation = 7.62939e-06 and residual = 7.62939e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 18:49:46 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 223 rows, 101 columns and 688 nonzeros
+Coefficient statistics:
+  Matrix range     [5e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 0 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 223 rows, 95 columns, 644 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.000000e+10   0.000000e+00      0s
+     111    7.7341669e+11   0.000000e+00   0.000000e+00      0s
+
+Solved in 111 iterations and 0.00 seconds
+Optimal objective  7.734166863e+11
+Warning: unscaled primal violation = 3.8147e-06 and residual = 3.8147e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:08:28 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 416 rows, 176 columns and 1400 nonzeros
+Coefficient statistics:
+  Matrix range     [5e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 0 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 416 rows, 168 columns, 1336 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   4.000000e+10   0.000000e+00      0s
+Extra 2 simplex iterations after uncrush
+     183    1.9371460e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 183 iterations and 0.00 seconds
+Optimal objective  1.937145982e+12
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:08:32 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 384 rows, 168 columns and 1100 nonzeros
+Coefficient statistics:
+  Matrix range     [5e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 16 rows and 16 columns
+Presolve time: 0.00s
+Presolved: 368 rows, 152 columns, 944 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 16 simplex iterations after uncrush
+     209    3.0902887e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 209 iterations and 0.00 seconds
+Optimal objective  3.090288709e+12
+Warning: unscaled primal violation = 1.23978e-05 and residual = 1.23978e-05
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:08:57 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 2656 rows, 920 columns and 19100 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 88 rows and 8 columns
+Presolve time: 0.01s
+Presolved: 2568 rows, 912 columns, 18448 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 2 simplex iterations after uncrush
+    1208    4.3347583e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 1208 iterations and 0.07 seconds
+Optimal objective  4.334758350e+12
+Warning: unscaled primal violation = 3.8147e-06 and residual = 6.67572e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:09:12 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 2496 rows, 904 columns and 20196 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 200 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2296 rows, 888 columns, 19136 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 250 simplex iterations after uncrush
+    1327    1.3027037e+13   0.000000e+00   0.000000e+00      0s
+
+Solved in 1327 iterations and 0.06 seconds
+Optimal objective  1.302703724e+13
+Warning: unscaled primal violation = 7.62939e-06 and residual = 2.47955e-05
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:09:25 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 2736 rows, 936 columns and 14048 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 288 rows and 16 columns
+Presolve time: 0.00s
+Presolved: 2448 rows, 920 columns, 12824 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   4.000000e+10   0.000000e+00      0s
+Extra 302 simplex iterations after uncrush
+    1419    1.4154606e+13   0.000000e+00   0.000000e+00      0s
+
+Solved in 1419 iterations and 0.05 seconds
+Optimal objective  1.415460616e+13
+Warning: unscaled primal violation = 2.0802e-05 and residual = 2.38419e-05
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:09:57 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 1024 rows, 408 columns and 5424 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 56 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 968 rows, 400 columns, 5128 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 172 simplex iterations after uncrush
+     705    6.8124989e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 705 iterations and 0.03 seconds
+Optimal objective  6.812498918e+12
+Warning: unscaled primal violation = 1.74046e-05 and residual = 1.74046e-05
+Optimize a model with 1024 rows, 408 columns and 5424 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 56 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 968 rows, 400 columns, 5128 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 172 simplex iterations after uncrush
+     705    6.8124989e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 705 iterations and 0.03 seconds
+Optimal objective  6.812498918e+12
+Warning: unscaled primal violation = 1.74046e-05 and residual = 1.74046e-05
+Optimize a model with 1024 rows, 408 columns and 5424 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 56 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 968 rows, 400 columns, 5128 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 172 simplex iterations after uncrush
+     705    6.8124989e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 705 iterations and 0.03 seconds
+Optimal objective  6.812498918e+12
+Warning: unscaled primal violation = 1.74046e-05 and residual = 1.74046e-05
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:11:33 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 160 rows, 72 columns and 320 nonzeros
+Coefficient statistics:
+  Matrix range     [9e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 224 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      64    2.4314084e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 64 iterations and 0.00 seconds
+Optimal objective  2.431408399e+12
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:11:47 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:15:30 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:15:36 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:17:41 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:17:48 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:19:21 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:19:50 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:25:33 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:25:43 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:26:44 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:27:53 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:29:03 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:29:12 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:29:34 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:29:53 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+Optimize a model with 160 rows, 72 columns and 408 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 48 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 112 rows, 64 columns, 312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+      76    1.0167078e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 76 iterations and 0.00 seconds
+Optimal objective  1.016707778e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 1.90735e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:30:50 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 1024 rows, 408 columns and 5424 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 56 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 968 rows, 400 columns, 5128 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 172 simplex iterations after uncrush
+     705    6.8124989e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 705 iterations and 0.03 seconds
+Optimal objective  6.812498918e+12
+Warning: unscaled primal violation = 1.74046e-05 and residual = 1.74046e-05
+Optimize a model with 1024 rows, 408 columns and 5424 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 56 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 968 rows, 400 columns, 5128 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 172 simplex iterations after uncrush
+     705    6.8124989e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 705 iterations and 0.03 seconds
+Optimal objective  6.812498918e+12
+Warning: unscaled primal violation = 1.74046e-05 and residual = 1.74046e-05
+Optimize a model with 1024 rows, 408 columns and 5424 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 56 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 968 rows, 400 columns, 5128 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 172 simplex iterations after uncrush
+     705    6.8124989e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 705 iterations and 0.03 seconds
+Optimal objective  6.812498918e+12
+Warning: unscaled primal violation = 1.74046e-05 and residual = 1.74046e-05
+Optimize a model with 1024 rows, 408 columns and 5424 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 56 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 968 rows, 400 columns, 5128 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 172 simplex iterations after uncrush
+     705    6.8124989e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 705 iterations and 0.03 seconds
+Optimal objective  6.812498918e+12
+Warning: unscaled primal violation = 1.74046e-05 and residual = 1.74046e-05
+Optimize a model with 1024 rows, 408 columns and 5424 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 56 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 968 rows, 400 columns, 5128 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 172 simplex iterations after uncrush
+     705    6.8124989e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 705 iterations and 0.03 seconds
+Optimal objective  6.812498918e+12
+Warning: unscaled primal violation = 1.74046e-05 and residual = 1.74046e-05
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:32:30 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 1024 rows, 408 columns and 5424 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 56 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 968 rows, 400 columns, 5128 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 172 simplex iterations after uncrush
+     705    6.8124989e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 705 iterations and 0.03 seconds
+Optimal objective  6.812498918e+12
+Warning: unscaled primal violation = 1.74046e-05 and residual = 1.74046e-05
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:32:48 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 1024 rows, 408 columns and 5424 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 56 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 968 rows, 400 columns, 5128 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 172 simplex iterations after uncrush
+     705    6.8124989e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 705 iterations and 0.03 seconds
+Optimal objective  6.812498918e+12
+Warning: unscaled primal violation = 1.74046e-05 and residual = 1.74046e-05
+Optimize a model with 1024 rows, 408 columns and 5424 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 56 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 968 rows, 400 columns, 5128 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 172 simplex iterations after uncrush
+     705    6.8124989e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 705 iterations and 0.03 seconds
+Optimal objective  6.812498918e+12
+Warning: unscaled primal violation = 1.74046e-05 and residual = 1.74046e-05
+Optimize a model with 1024 rows, 408 columns and 5424 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 56 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 968 rows, 400 columns, 5128 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 172 simplex iterations after uncrush
+     705    6.8124989e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 705 iterations and 0.03 seconds
+Optimal objective  6.812498918e+12
+Warning: unscaled primal violation = 1.74046e-05 and residual = 1.74046e-05
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:34:27 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 1024 rows, 408 columns and 5424 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 56 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 968 rows, 400 columns, 5128 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 172 simplex iterations after uncrush
+     705    6.8124989e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 705 iterations and 0.03 seconds
+Optimal objective  6.812498918e+12
+Warning: unscaled primal violation = 1.74046e-05 and residual = 1.74046e-05
+Optimize a model with 1024 rows, 408 columns and 5424 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 56 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 968 rows, 400 columns, 5128 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 172 simplex iterations after uncrush
+     705    6.8124989e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 705 iterations and 0.03 seconds
+Optimal objective  6.812498918e+12
+Warning: unscaled primal violation = 1.74046e-05 and residual = 1.74046e-05
+Optimize a model with 1024 rows, 408 columns and 5424 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 56 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 968 rows, 400 columns, 5128 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 172 simplex iterations after uncrush
+     705    6.8124989e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 705 iterations and 0.03 seconds
+Optimal objective  6.812498918e+12
+Warning: unscaled primal violation = 1.74046e-05 and residual = 1.74046e-05
+Optimize a model with 1024 rows, 408 columns and 5424 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 56 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 968 rows, 400 columns, 5128 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 172 simplex iterations after uncrush
+     705    6.8124989e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 705 iterations and 0.03 seconds
+Optimal objective  6.812498918e+12
+Warning: unscaled primal violation = 1.74046e-05 and residual = 1.74046e-05
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:35:31 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 1024 rows, 408 columns and 5424 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 56 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 968 rows, 400 columns, 5128 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 172 simplex iterations after uncrush
+     705    6.8124989e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 705 iterations and 0.03 seconds
+Optimal objective  6.812498918e+12
+Warning: unscaled primal violation = 1.74046e-05 and residual = 1.74046e-05
+Optimize a model with 1024 rows, 408 columns and 5424 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 56 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 968 rows, 400 columns, 5128 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 172 simplex iterations after uncrush
+     705    6.8124989e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 705 iterations and 0.04 seconds
+Optimal objective  6.812498918e+12
+Warning: unscaled primal violation = 1.74046e-05 and residual = 1.74046e-05
+
+Gurobi 7.5.1 (linux64, Python) logging started Fri Dec 21 23:42:52 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 1024 rows, 408 columns and 5424 nonzeros
+Coefficient statistics:
+  Matrix range     [2e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 56 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 968 rows, 400 columns, 5128 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 172 simplex iterations after uncrush
+     705    6.8124989e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 705 iterations and 0.03 seconds
+Optimal objective  6.812498918e+12
+Warning: unscaled primal violation = 1.74046e-05 and residual = 1.74046e-05
+
+Gurobi 7.5.1 (linux64, Python) logging started Sat Dec 22 00:06:31 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 496 rows, 184 columns and 1656 nonzeros
+Coefficient statistics:
+  Matrix range     [4e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 24 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 472 rows, 176 columns, 1504 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   4.000000e+10   0.000000e+00      0s
+Extra 148 simplex iterations after uncrush
+     375    4.1535705e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 375 iterations and 0.01 seconds
+Optimal objective  4.153570541e+12
+Warning: unscaled primal violation = 1.28746e-05 and residual = 1.28746e-05
+
+Gurobi 7.5.1 (linux64, Python) logging started Sat Dec 22 00:06:35 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 416 rows, 176 columns and 1348 nonzeros
+Coefficient statistics:
+  Matrix range     [5e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 0 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 416 rows, 168 columns, 1312 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 5 simplex iterations after uncrush
+     244    1.5057950e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 244 iterations and 0.00 seconds
+Optimal objective  1.505795012e+12
+Warning: unscaled primal violation = 2.98023e-06 and residual = 2.98023e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Sat Dec 22 00:06:38 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 592 rows, 200 columns and 1396 nonzeros
+Coefficient statistics:
+  Matrix range     [9e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 16 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 576 rows, 192 columns, 1224 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+     245    4.6928372e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 245 iterations and 0.00 seconds
+Optimal objective  4.692837221e+12
+Warning: unscaled primal violation = 1.90735e-06 and residual = 7.62939e-06
+
+Gurobi 7.5.1 (linux64, Python) logging started Sat Dec 22 00:06:47 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 3008 rows, 984 columns and 24372 nonzeros
+Coefficient statistics:
+  Matrix range     [7e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 128 rows and 8 columns
+Presolve time: 0.01s
+Presolved: 2880 rows, 976 columns, 22656 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 213 simplex iterations after uncrush
+    1397    9.8596593e+12   0.000000e+00   0.000000e+00      0s
+
+Solved in 1397 iterations and 0.08 seconds
+Optimal objective  9.859659251e+12
+Warning: unscaled primal violation = 1.04904e-05 and residual = 2.28882e-05
+
+Gurobi 7.5.1 (linux64, Python) logging started Sat Dec 22 00:06:53 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 2976 rows, 968 columns and 23372 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 272 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2704 rows, 952 columns, 22088 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 263 simplex iterations after uncrush
+    1389    1.4317821e+13   0.000000e+00   0.000000e+00      0s
+
+Solved in 1389 iterations and 0.06 seconds
+Optimal objective  1.431782139e+13
+Warning: unscaled primal violation = 9.53674e-06 and residual = 2.54512e-05
+
+Gurobi 7.5.1 (linux64, Python) logging started Sat Dec 22 00:07:01 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 2976 rows, 984 columns and 31000 nonzeros
+Coefficient statistics:
+  Matrix range     [7e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+
+Concurrent LP optimizer: dual simplex and barrier
+Showing barrier log only...
+
+Presolve removed 24 rows and 300 columns
+Presolve time: 0.03s
+Presolved: 960 rows, 2676 columns, 27628 nonzeros
+
+Ordering time: 0.00s
+
+Barrier statistics:
+ Dense cols : 184
+ AA' NZ     : 2.408e+04
+ Factor NZ  : 5.297e+04 (roughly 2 MBytes of memory)
+ Factor Ops : 3.574e+06 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   7.35098683e+12  3.42842441e+12  2.04e+02 2.84e+10  2.16e+11     0s
+   1   5.21047350e+12  4.54284186e+13  4.71e+01 2.57e+09  5.69e+10     0s
+   2   8.26727273e+12  3.35826674e+13  8.60e+00 1.63e+09  1.59e+10     0s
+   3   1.12389087e+13  2.17091220e+13  1.19e+00 4.36e+08  4.69e+09     0s
+   4   1.31382416e+13  1.81053512e+13  2.77e-01 2.02e+08  2.09e+09     0s
+   5   1.39317776e+13  1.65899759e+13  1.33e-01 1.07e+08  1.11e+09     0s
+   6   1.47789020e+13  1.56039251e+13  1.73e-02 3.61e+07  3.41e+08     0s
+   7   1.49989794e+13  1.51459877e+13  1.05e-03 5.80e+06  5.99e+07     0s
+   8   1.50274605e+13  1.50513842e+13  2.23e-04 4.64e+05  9.39e+06     0s
+   9   1.50368768e+13  1.50404034e+13  2.76e-05 6.61e+04  1.38e+06     0s
+  10   1.50382829e+13  1.50383697e+13  9.70e-07 1.12e+02  3.29e+04     0s
+  11   1.50383475e+13  1.50383475e+13  2.32e-13 4.07e-03  3.45e+01     0s
+  12   1.50383475e+13  1.50383475e+13  4.75e-13 2.06e-05  3.45e-02     0s
+  13   1.50383475e+13  1.50383475e+13  4.75e-13 2.06e-05  3.45e-02     0s
+
+Barrier solved model in 13 iterations and 0.09 seconds
+Optimal objective 1.50383475e+13
+
+Crossover log...
+
+
+Solved with dual simplex
+Solved in 1584 iterations and 0.11 seconds
+Optimal objective  1.503834752e+13
+Warning: unscaled primal violation = 3.88026e-05 and residual = 4.19617e-05
+Optimize a model with 2976 rows, 984 columns and 31000 nonzeros
+Coefficient statistics:
+  Matrix range     [7e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+
+Concurrent LP optimizer: dual simplex and barrier
+Showing barrier log only...
+
+Presolve removed 24 rows and 300 columns
+Presolve time: 0.03s
+Presolved: 960 rows, 2676 columns, 27628 nonzeros
+
+Ordering time: 0.00s
+
+Barrier statistics:
+ Dense cols : 184
+ AA' NZ     : 2.408e+04
+ Factor NZ  : 5.297e+04 (roughly 2 MBytes of memory)
+ Factor Ops : 3.574e+06 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   7.35098683e+12  3.42842441e+12  2.04e+02 2.84e+10  2.16e+11     0s
+   1   5.21047350e+12  4.54284186e+13  4.71e+01 2.57e+09  5.69e+10     0s
+   2   8.26727273e+12  3.35826674e+13  8.60e+00 1.63e+09  1.59e+10     0s
+   3   1.12389087e+13  2.17091220e+13  1.19e+00 4.36e+08  4.69e+09     0s
+   4   1.31382416e+13  1.81053512e+13  2.77e-01 2.02e+08  2.09e+09     0s
+   5   1.39317776e+13  1.65899759e+13  1.33e-01 1.07e+08  1.11e+09     0s
+   6   1.47789020e+13  1.56039251e+13  1.73e-02 3.61e+07  3.41e+08     0s
+   7   1.49989794e+13  1.51459877e+13  1.05e-03 5.80e+06  5.99e+07     0s
+   8   1.50274605e+13  1.50513842e+13  2.23e-04 4.64e+05  9.39e+06     0s
+   9   1.50368768e+13  1.50404034e+13  2.76e-05 6.61e+04  1.38e+06     0s
+  10   1.50382829e+13  1.50383697e+13  9.70e-07 1.12e+02  3.29e+04     0s
+  11   1.50383475e+13  1.50383475e+13  2.32e-13 4.07e-03  3.45e+01     0s
+  12   1.50383475e+13  1.50383475e+13  4.75e-13 2.06e-05  3.45e-02     0s
+  13   1.50383475e+13  1.50383475e+13  4.75e-13 2.06e-05  3.45e-02     0s
+
+Barrier solved model in 13 iterations and 0.08 seconds
+Optimal objective 1.50383475e+13
+
+Crossover log...
+
+
+Solved with dual simplex
+Solved in 1584 iterations and 0.10 seconds
+Optimal objective  1.503834752e+13
+Warning: unscaled primal violation = 3.88026e-05 and residual = 4.19617e-05
+Optimize a model with 2976 rows, 984 columns and 31000 nonzeros
+Coefficient statistics:
+  Matrix range     [7e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+
+Concurrent LP optimizer: dual simplex and barrier
+Showing barrier log only...
+
+Presolve removed 24 rows and 300 columns
+Presolve time: 0.03s
+Presolved: 960 rows, 2676 columns, 27628 nonzeros
+
+Ordering time: 0.00s
+
+Barrier statistics:
+ Dense cols : 184
+ AA' NZ     : 2.408e+04
+ Factor NZ  : 5.297e+04 (roughly 2 MBytes of memory)
+ Factor Ops : 3.574e+06 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   7.35098683e+12  3.42842441e+12  2.04e+02 2.84e+10  2.16e+11     0s
+   1   5.21047350e+12  4.54284186e+13  4.71e+01 2.57e+09  5.69e+10     0s
+   2   8.26727273e+12  3.35826674e+13  8.60e+00 1.63e+09  1.59e+10     0s
+   3   1.12389087e+13  2.17091220e+13  1.19e+00 4.36e+08  4.69e+09     0s
+   4   1.31382416e+13  1.81053512e+13  2.77e-01 2.02e+08  2.09e+09     0s
+   5   1.39317776e+13  1.65899759e+13  1.33e-01 1.07e+08  1.11e+09     0s
+   6   1.47789020e+13  1.56039251e+13  1.73e-02 3.61e+07  3.41e+08     0s
+   7   1.49989794e+13  1.51459877e+13  1.05e-03 5.80e+06  5.99e+07     0s
+   8   1.50274605e+13  1.50513842e+13  2.23e-04 4.64e+05  9.39e+06     0s
+   9   1.50368768e+13  1.50404034e+13  2.76e-05 6.61e+04  1.38e+06     0s
+  10   1.50382829e+13  1.50383697e+13  9.70e-07 1.12e+02  3.29e+04     0s
+  11   1.50383475e+13  1.50383475e+13  2.32e-13 4.07e-03  3.45e+01     0s
+  12   1.50383475e+13  1.50383475e+13  4.75e-13 2.06e-05  3.45e-02     0s
+  13   1.50383475e+13  1.50383475e+13  4.75e-13 2.06e-05  3.45e-02     0s
+
+Barrier solved model in 13 iterations and 0.08 seconds
+Optimal objective 1.50383475e+13
+
+Crossover log...
+
+
+Solved with dual simplex
+Solved in 1584 iterations and 0.10 seconds
+Optimal objective  1.503834752e+13
+Warning: unscaled primal violation = 3.88026e-05 and residual = 4.19617e-05
+
+Gurobi 7.5.1 (linux64, Python) logging started Sat Dec 22 00:07:48 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 2608 rows, 920 columns and 17872 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 104 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2504 rows, 904 columns, 16272 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 268 simplex iterations after uncrush
+    1530    1.3254233e+13   0.000000e+00   0.000000e+00      0s
+
+Solved in 1530 iterations and 0.06 seconds
+Optimal objective  1.325423289e+13
+Warning: unscaled primal violation = 1.31093e-05 and residual = 2.67029e-05
+Optimize a model with 2608 rows, 920 columns and 17872 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 104 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2504 rows, 904 columns, 16272 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 268 simplex iterations after uncrush
+    1530    1.3254233e+13   0.000000e+00   0.000000e+00      0s
+
+Solved in 1530 iterations and 0.06 seconds
+Optimal objective  1.325423289e+13
+Warning: unscaled primal violation = 1.31093e-05 and residual = 2.67029e-05
+
+Gurobi 7.5.1 (linux64, Python) logging started Sat Dec 22 00:17:30 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 2720 rows, 920 columns and 20320 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 184 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2536 rows, 904 columns, 19184 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 239 simplex iterations after uncrush
+    1458    1.1463384e+13   0.000000e+00   0.000000e+00      0s
+
+Solved in 1458 iterations and 0.07 seconds
+Optimal objective  1.146338381e+13
+Warning: unscaled primal violation = 3.016e-05 and residual = 3.016e-05
+Optimize a model with 2720 rows, 920 columns and 20320 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 184 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2536 rows, 904 columns, 19184 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 239 simplex iterations after uncrush
+    1458    1.1463384e+13   0.000000e+00   0.000000e+00      0s
+
+Solved in 1458 iterations and 0.06 seconds
+Optimal objective  1.146338381e+13
+Warning: unscaled primal violation = 3.016e-05 and residual = 3.016e-05
+Optimize a model with 2720 rows, 920 columns and 20320 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 184 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2536 rows, 904 columns, 19184 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 239 simplex iterations after uncrush
+    1458    1.1463384e+13   0.000000e+00   0.000000e+00      0s
+
+Solved in 1458 iterations and 0.07 seconds
+Optimal objective  1.146338381e+13
+Warning: unscaled primal violation = 3.016e-05 and residual = 3.016e-05
+Optimize a model with 2720 rows, 920 columns and 20320 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 184 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2536 rows, 904 columns, 19184 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 239 simplex iterations after uncrush
+    1458    1.1463384e+13   0.000000e+00   0.000000e+00      0s
+
+Solved in 1458 iterations and 0.06 seconds
+Optimal objective  1.146338381e+13
+Warning: unscaled primal violation = 3.016e-05 and residual = 3.016e-05
+Optimize a model with 2720 rows, 920 columns and 20320 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 184 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2536 rows, 904 columns, 19184 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 239 simplex iterations after uncrush
+    1458    1.1463384e+13   0.000000e+00   0.000000e+00      0s
+
+Solved in 1458 iterations and 0.07 seconds
+Optimal objective  1.146338381e+13
+Warning: unscaled primal violation = 3.016e-05 and residual = 3.016e-05
+Optimize a model with 2720 rows, 920 columns and 20320 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 184 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2536 rows, 904 columns, 19184 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 239 simplex iterations after uncrush
+    1458    1.1463384e+13   0.000000e+00   0.000000e+00      0s
+
+Solved in 1458 iterations and 0.07 seconds
+Optimal objective  1.146338381e+13
+Warning: unscaled primal violation = 3.016e-05 and residual = 3.016e-05
+Optimize a model with 2720 rows, 920 columns and 20320 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 184 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2536 rows, 904 columns, 19184 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 239 simplex iterations after uncrush
+    1458    1.1463384e+13   0.000000e+00   0.000000e+00      0s
+
+Solved in 1458 iterations and 0.07 seconds
+Optimal objective  1.146338381e+13
+Warning: unscaled primal violation = 3.016e-05 and residual = 3.016e-05
+Optimize a model with 2720 rows, 920 columns and 20320 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 184 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2536 rows, 904 columns, 19184 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 239 simplex iterations after uncrush
+    1458    1.1463384e+13   0.000000e+00   0.000000e+00      0s
+
+Solved in 1458 iterations and 0.07 seconds
+Optimal objective  1.146338381e+13
+Warning: unscaled primal violation = 3.016e-05 and residual = 3.016e-05
+Optimize a model with 2720 rows, 920 columns and 20320 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 184 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2536 rows, 904 columns, 19184 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 239 simplex iterations after uncrush
+    1458    1.1463384e+13   0.000000e+00   0.000000e+00      0s
+
+Solved in 1458 iterations and 0.07 seconds
+Optimal objective  1.146338381e+13
+Warning: unscaled primal violation = 3.016e-05 and residual = 3.016e-05
+Optimize a model with 2720 rows, 920 columns and 20320 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 184 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2536 rows, 904 columns, 19184 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 239 simplex iterations after uncrush
+    1458    1.1463384e+13   0.000000e+00   0.000000e+00      0s
+
+Solved in 1458 iterations and 0.07 seconds
+Optimal objective  1.146338381e+13
+Warning: unscaled primal violation = 3.016e-05 and residual = 3.016e-05
+Optimize a model with 2720 rows, 920 columns and 20320 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 184 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2536 rows, 904 columns, 19184 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 239 simplex iterations after uncrush
+    1458    1.1463384e+13   0.000000e+00   0.000000e+00      0s
+
+Solved in 1458 iterations and 0.07 seconds
+Optimal objective  1.146338381e+13
+Warning: unscaled primal violation = 3.016e-05 and residual = 3.016e-05
+Optimize a model with 2720 rows, 920 columns and 20320 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 184 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2536 rows, 904 columns, 19184 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 239 simplex iterations after uncrush
+    1458    1.1463384e+13   0.000000e+00   0.000000e+00      0s
+
+Solved in 1458 iterations and 0.07 seconds
+Optimal objective  1.146338381e+13
+Warning: unscaled primal violation = 3.016e-05 and residual = 3.016e-05
+Optimize a model with 2720 rows, 920 columns and 20320 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 184 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2536 rows, 904 columns, 19184 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 239 simplex iterations after uncrush
+    1458    1.1463384e+13   0.000000e+00   0.000000e+00      0s
+
+Solved in 1458 iterations and 0.07 seconds
+Optimal objective  1.146338381e+13
+Warning: unscaled primal violation = 3.016e-05 and residual = 3.016e-05
+Optimize a model with 2720 rows, 920 columns and 20320 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 184 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2536 rows, 904 columns, 19184 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 239 simplex iterations after uncrush
+    1458    1.1463384e+13   0.000000e+00   0.000000e+00      0s
+
+Solved in 1458 iterations and 0.07 seconds
+Optimal objective  1.146338381e+13
+Warning: unscaled primal violation = 3.016e-05 and residual = 3.016e-05
+Optimize a model with 2720 rows, 920 columns and 20320 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 184 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2536 rows, 904 columns, 19184 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 239 simplex iterations after uncrush
+    1458    1.1463384e+13   0.000000e+00   0.000000e+00      0s
+
+Solved in 1458 iterations and 0.06 seconds
+Optimal objective  1.146338381e+13
+Warning: unscaled primal violation = 3.016e-05 and residual = 3.016e-05
+Optimize a model with 2720 rows, 920 columns and 20320 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+10]
+Warning: Model contains large rhs
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 184 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2536 rows, 904 columns, 19184 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   8.000000e+10   0.000000e+00      0s
+Extra 239 simplex iterations after uncrush
+    1458    1.1463384e+13   0.000000e+00   0.000000e+00      0s
+
+Solved in 1458 iterations and 0.06 seconds
+Optimal objective  1.146338381e+13
+Warning: unscaled primal violation = 3.016e-05 and residual = 3.016e-05
+
+Gurobi 7.5.1 (linux64, Python) logging started Sat Dec 22 00:20:03 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 2624 rows, 928 columns and 25416 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+03]
+Presolve removed 224 rows and 24 columns
+Presolve time: 0.01s
+Presolved: 2400 rows, 904 columns, 22440 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0807134e+04   3.349844e+04   0.000000e+00      0s
+    1117    1.1486406e+06   0.000000e+00   0.000000e+00      0s
+
+Solved in 1117 iterations and 0.05 seconds
+Optimal objective  1.148640618e+06
+Optimize a model with 2624 rows, 928 columns and 25416 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+03]
+Presolve removed 224 rows and 24 columns
+Presolve time: 0.01s
+Presolved: 2400 rows, 904 columns, 22440 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0807134e+04   3.349844e+04   0.000000e+00      0s
+    1117    1.1486406e+06   0.000000e+00   0.000000e+00      0s
+
+Solved in 1117 iterations and 0.05 seconds
+Optimal objective  1.148640618e+06
+Optimize a model with 2624 rows, 928 columns and 25416 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+03]
+Presolve removed 224 rows and 24 columns
+Presolve time: 0.01s
+Presolved: 2400 rows, 904 columns, 22440 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0807134e+04   3.349844e+04   0.000000e+00      0s
+    1117    1.1486406e+06   0.000000e+00   0.000000e+00      0s
+
+Solved in 1117 iterations and 0.05 seconds
+Optimal objective  1.148640618e+06
+Optimize a model with 2624 rows, 928 columns and 25416 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+03]
+Presolve removed 224 rows and 24 columns
+Presolve time: 0.01s
+Presolved: 2400 rows, 904 columns, 22440 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0807134e+04   3.349844e+04   0.000000e+00      0s
+    1117    1.1486406e+06   0.000000e+00   0.000000e+00      0s
+
+Solved in 1117 iterations and 0.05 seconds
+Optimal objective  1.148640618e+06
+
+Gurobi 7.5.1 (linux64, Python) logging started Sat Dec 22 00:20:23 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 2688 rows, 928 columns and 34788 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+03]
+
+Concurrent LP optimizer: dual simplex and barrier
+Showing barrier log only...
+
+Presolve removed 90 rows and 364 columns
+Presolve time: 0.03s
+Presolved: 838 rows, 2324 columns, 30122 nonzeros
+
+Ordering time: 0.04s
+
+Barrier statistics:
+ AA' NZ     : 4.350e+04
+ Factor NZ  : 4.473e+04 (roughly 2 MBytes of memory)
+ Factor Ops : 3.126e+06 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   1.59164872e+05  1.24710913e+05  1.37e+02 1.54e+03  4.21e+04     0s
+   1   5.67859215e+04  7.79138918e+06  7.01e+01 5.00e+02  1.72e+04     0s
+   2   3.40865161e+04  4.64011937e+06  3.40e+00 0.00e+00  2.29e+03     0s
+
+Barrier performed 2 iterations in 0.10 seconds
+Barrier solve interrupted - model solved by another algorithm
+
+
+Solved with dual simplex
+Solved in 1073 iterations and 0.10 seconds
+Optimal objective  6.550961205e+05
+
+Gurobi 7.5.1 (linux64, Python) logging started Sat Dec 22 00:34:57 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 2368 rows, 880 columns and 19264 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+03]
+Presolve removed 88 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2280 rows, 864 columns, 18592 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0832405e+04   4.320702e+04   0.000000e+00      0s
+    1078    1.1834693e+06   0.000000e+00   0.000000e+00      0s
+
+Solved in 1078 iterations and 0.05 seconds
+Optimal objective  1.183469282e+06
+Optimize a model with 2368 rows, 880 columns and 19264 nonzeros
+Coefficient statistics:
+  Matrix range     [8e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+03]
+Presolve removed 88 rows and 16 columns
+Presolve time: 0.01s
+Presolved: 2280 rows, 864 columns, 18592 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.0832405e+04   4.320702e+04   0.000000e+00      0s
+    1078    1.1834693e+06   0.000000e+00   0.000000e+00      0s
+
+Solved in 1078 iterations and 0.05 seconds
+Optimal objective  1.183469282e+06
+
+Gurobi 7.5.1 (linux64, Python) logging started Sat Dec 22 00:35:43 2018
+
+Academic license - for non-commercial use only
+Optimize a model with 3168 rows, 1000 columns and 36352 nonzeros
+Coefficient statistics:
+  Matrix range     [7e-03, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [2e+00, 1e+03]
+
+Concurrent LP optimizer: dual simplex and barrier
+Showing barrier log only...
+
+Presolve removed 39 rows and 255 columns
+Presolve time: 0.03s
+Presolved: 961 rows, 2913 columns, 31508 nonzeros
+
+Ordering time: 0.00s
+
+Barrier statistics:
+ Dense cols : 208
+ AA' NZ     : 2.748e+04
+ Factor NZ  : 6.067e+04 (roughly 2 MBytes of memory)
+ Factor Ops : 4.712e+06 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   8.78240065e+03 -2.49677338e+04  2.46e+02 6.31e+02  2.51e+04     0s
+   1   3.26317770e+04  6.77158653e+06  1.28e+02 2.25e+02  1.31e+04     0s
+   2   1.08752910e+05  5.65347410e+06  1.61e+01 6.91e+01  3.13e+03     0s
+   3   5.30508818e+05  3.93818645e+06  3.97e+00 3.30e+01  1.44e+03     0s
+   4   9.05791479e+05  2.69262331e+06  1.37e+00 1.49e+01  6.99e+02     0s
+   5   1.13610903e+06  2.01978180e+06  6.18e-01 6.77e+00  3.37e+02     0s
+   6   1.31586173e+06  1.71872974e+06  2.60e-01 2.89e+00  1.51e+02     0s
+   7   1.47073066e+06  1.60573704e+06  2.80e-02 1.02e+00  5.00e+01     0s
+   8   1.50666468e+06  1.56223808e+06  8.53e-03 4.44e-01  2.06e+01     0s
+   9   1.52287979e+06  1.54403729e+06  2.18e-03 1.96e-01  7.93e+00     0s
+  10   1.52968698e+06  1.53252153e+06  6.48e-05 2.37e-02  1.05e+00     0s
+  11   1.53037438e+06  1.53094629e+06  9.13e-06 4.65e-03  2.12e-01     0s
+  12   1.53052186e+06  1.53053793e+06  1.24e-07 8.51e-05  5.82e-03     0s
+  13   1.53052712e+06  1.53052714e+06  5.80e-12 3.46e-12  5.91e-06     0s
+  14   1.53052713e+06  1.53052713e+06  1.43e-11 2.67e-12  5.91e-09     0s
+
+Barrier solved model in 14 iterations and 0.10 seconds
+Optimal objective 1.53052713e+06
+
+
+Solved with dual simplex
+Solved in 1224 iterations and 0.10 seconds
+Optimal objective  1.530527126e+06
