@@ -30,6 +30,8 @@ class BellmanEquation:
 
     # Generates the constraint for the integer program
     def get_contraints(self, variables, dungeon):
+        if self.node.isFinal:
+            return [self.ug]
         contraints = []
         for k in self.node.action.keys():
             ctr = LinExpr()
@@ -77,7 +79,7 @@ def pl_algo(dungeon, pdm, gamma):
     obj = LinExpr()
     # Creates the objective functions and the Bellman equations
     for s in pdm.nodes.keys():
-        v = model.addVar(vtype=GRB.CONTINUOUS, name=str(s))
+        v = model.addVar(vtype = GRB.CONTINUOUS, name = str(s))
         obj += v
         variables[s] = v
         bellmans.append((BellmanEquation(pdm.nodes[s], s.evaluate(dungeon), pdm.nodes, gamma), s))

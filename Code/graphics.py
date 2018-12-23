@@ -12,8 +12,8 @@ class Graphics:
         self.height = height
         self.width = width
         # Set the size of a cell
-        self.case_x = self.width / dungeon.x
-        self.case_y = self.height / dungeon.y
+        self.sizeCellX = self.width / dungeon.x
+        self.sizeCellY = self.height / dungeon.y
 
         # Set the font used for text
         self.font = pygame.font.SysFont("arial", min(20, int(width / 50)))
@@ -21,35 +21,35 @@ class Graphics:
         # Load all the pictures used
         self.pictures = {}
         self.pictures["start"] = pygame.image.load("resources/tileStart.jpg").convert()
-        self.pictures["start"] = pygame.transform.scale(self.pictures["start"], (int(self.case_x), int(self.case_y)))
+        self.pictures["start"] = pygame.transform.scale(self.pictures["start"], (int(self.sizeCellX), int(self.sizeCellY)))
         self.pictures["empty"] = pygame.image.load("resources/tileEmpty.jpg").convert()
-        self.pictures["empty"] = pygame.transform.scale(self.pictures["empty"], (int(self.case_x), int(self.case_y)))
+        self.pictures["empty"] = pygame.transform.scale(self.pictures["empty"], (int(self.sizeCellX), int(self.sizeCellY)))
         self.pictures["wall"] = pygame.image.load("resources/tileWall.jpg").convert()
-        self.pictures["wall"] = pygame.transform.scale(self.pictures["wall"], (int(self.case_x), int(self.case_y)))
+        self.pictures["wall"] = pygame.transform.scale(self.pictures["wall"], (int(self.sizeCellX), int(self.sizeCellY)))
         self.pictures["enemy"] = pygame.image.load("resources/tileEnemy.jpg").convert()
-        self.pictures["enemy"] = pygame.transform.scale(self.pictures["enemy"], (int(self.case_x), int(self.case_y)))
+        self.pictures["enemy"] = pygame.transform.scale(self.pictures["enemy"], (int(self.sizeCellX), int(self.sizeCellY)))
         self.pictures["trap"] = pygame.image.load("resources/tileTrap.jpg").convert()
-        self.pictures["trap"] = pygame.transform.scale(self.pictures["trap"], (int(self.case_x), int(self.case_y)))
+        self.pictures["trap"] = pygame.transform.scale(self.pictures["trap"], (int(self.sizeCellX), int(self.sizeCellY)))
         self.pictures["crack"] = pygame.image.load("resources/tileCrack.jpg").convert()
-        self.pictures["crack"] = pygame.transform.scale(self.pictures["crack"], (int(self.case_x), int(self.case_y)))
+        self.pictures["crack"] = pygame.transform.scale(self.pictures["crack"], (int(self.sizeCellX), int(self.sizeCellY)))
         self.pictures["treasure"] = pygame.image.load("resources/tileTreasure.jpg").convert()
-        self.pictures["treasure"] = pygame.transform.scale(self.pictures["treasure"], (int(self.case_x), int(self.case_y)))
+        self.pictures["treasure"] = pygame.transform.scale(self.pictures["treasure"], (int(self.sizeCellX), int(self.sizeCellY)))
         self.pictures["sword"] = pygame.image.load("resources/tileSword.jpg").convert()
-        self.pictures["sword"] = pygame.transform.scale(self.pictures["sword"], (int(self.case_x), int(self.case_y)))
+        self.pictures["sword"] = pygame.transform.scale(self.pictures["sword"], (int(self.sizeCellX), int(self.sizeCellY)))
         self.pictures["key"] = pygame.image.load("resources/tileKey.jpg").convert()
-        self.pictures["key"] = pygame.transform.scale(self.pictures["key"], (int(self.case_x), int(self.case_y)))
+        self.pictures["key"] = pygame.transform.scale(self.pictures["key"], (int(self.sizeCellX), int(self.sizeCellY)))
         self.pictures["portal"] = pygame.image.load("resources/tilePortal.jpg").convert()
-        self.pictures["portal"] = pygame.transform.scale(self.pictures["portal"], (int(self.case_x), int(self.case_y)))
+        self.pictures["portal"] = pygame.transform.scale(self.pictures["portal"], (int(self.sizeCellX), int(self.sizeCellY)))
         self.pictures["platform"] = pygame.image.load("resources/tilePlatform.jpg").convert()
-        self.pictures["platform"] = pygame.transform.scale(self.pictures["platform"], (int(self.case_x), int(self.case_y)))
+        self.pictures["platform"] = pygame.transform.scale(self.pictures["platform"], (int(self.sizeCellX), int(self.sizeCellY)))
         self.pictures["hero"] = pygame.image.load("resources/hero.png").convert_alpha()
-        self.pictures["hero"] = pygame.transform.scale(self.pictures["hero"], (int(self.case_x), int(self.case_y)))
+        self.pictures["hero"] = pygame.transform.scale(self.pictures["hero"], (int(self.sizeCellX), int(self.sizeCellY)))
         self.pictures["heroSword"] = pygame.image.load("resources/heroSword.png").convert_alpha()
-        self.pictures["heroSword"] = pygame.transform.scale(self.pictures["heroSword"], (int(self.case_x), int(self.case_y)))
+        self.pictures["heroSword"] = pygame.transform.scale(self.pictures["heroSword"], (int(self.sizeCellX), int(self.sizeCellY)))
         self.pictures["heroTreasure"] = pygame.image.load("resources/heroTreasure.png").convert_alpha()
-        self.pictures["heroTreasure"] = pygame.transform.scale(self.pictures["heroTreasure"], (int(self.case_x), int(self.case_y)))
+        self.pictures["heroTreasure"] = pygame.transform.scale(self.pictures["heroTreasure"], (int(self.sizeCellX), int(self.sizeCellY)))
         self.pictures["heroTreasureSword"] = pygame.image.load("resources/heroTreasureSword.png").convert_alpha()
-        self.pictures["heroTreasureSword"] = pygame.transform.scale(self.pictures["heroTreasureSword"], (int(self.case_x), int(self.case_y)))
+        self.pictures["heroTreasureSword"] = pygame.transform.scale(self.pictures["heroTreasureSword"], (int(self.sizeCellX), int(self.sizeCellY)))
 
     # Print a message in the footer
     def print_footer(self, message):
@@ -120,14 +120,14 @@ class Graphics:
         self.window.fill((255, 255, 255))
 
         for i in range(dungeon.x + 1):
-            pygame.draw.line(self.window, (0, 0, 0), (self.case_x * i, 0), (self.case_x * i, self.height))
+            pygame.draw.line(self.window, (0, 0, 0), (self.sizeCellX * i, 0), (self.sizeCellX * i, self.height))
         for i in range(dungeon.y + 1):
-            pygame.draw.line(self.window, (0, 0, 0), (0, self.case_y * i), (self.width, self.case_y * i))
+            pygame.draw.line(self.window, (0, 0, 0), (0, self.sizeCellY * i), (self.width, self.sizeCellY * i))
         for i in range(dungeon.x):
             for j in range(dungeon.y):
                 cell = dungeon.cells[i, j]
-                imagePosX = self.case_x * i
-                imagePosY = self.case_y * j
+                imagePosX = self.sizeCellX * i
+                imagePosY = self.sizeCellY * j
                 if cell == Cell.WALL:
                     self.window.blit(self.pictures["wall"], (imagePosX, imagePosY))
                 elif cell == Cell.EMPTY:
@@ -153,13 +153,13 @@ class Graphics:
         # Use the right player image given what he has picked
         if player.sword:
             if player.treasure:
-                self.window.blit(self.pictures["heroTreasureSword"], (self.case_x * player.x, self.case_y * player.y, self.case_x, self.case_y))
+                self.window.blit(self.pictures["heroTreasureSword"], (self.sizeCellX * player.x, self.sizeCellY * player.y, self.sizeCellX, self.sizeCellY))
             else:
-                self.window.blit(self.pictures["heroSword"], (self.case_x * player.x, self.case_y * player.y, self.case_x, self.case_y))
+                self.window.blit(self.pictures["heroSword"], (self.sizeCellX * player.x, self.sizeCellY * player.y, self.sizeCellX, self.sizeCellY))
         elif player.treasure:
-            self.window.blit(self.pictures["heroTreasure"], (self.case_x * player.x, self.case_y * player.y, self.case_x, self.case_y))
+            self.window.blit(self.pictures["heroTreasure"], (self.sizeCellX * player.x, self.sizeCellY * player.y, self.sizeCellX, self.sizeCellY))
         else:
-            self.window.blit(self.pictures["hero"], (self.case_x * player.x, self.case_y * player.y, self.case_x, self.case_y))
+            self.window.blit(self.pictures["hero"], (self.sizeCellX * player.x, self.sizeCellY * player.y, self.sizeCellX, self.sizeCellY))
         self.print_footer(self.footerText)
         pygame.display.flip()
         return True
@@ -177,18 +177,18 @@ class Graphics:
                 deltaX = 0
                 deltaY = 0
                 if move == Movement.TOP:
-                    deltaX = int(self.case_x / 2)
+                    deltaX = int(self.sizeCellX / 2)
                     deltaY = 2
                 elif move == Movement.LEFT:
                     deltaX = 2
-                    deltaY = int(self.case_y / 2)
+                    deltaY = int(self.sizeCellY / 2)
                 elif move == Movement.RIGHT:
-                    deltaX = self.case_x - 2
-                    deltaY = int(self.case_y / 2)
+                    deltaX = self.sizeCellX - 2
+                    deltaY = int(self.sizeCellY / 2)
                 elif move == Movement.DOWN:
-                    deltaX = int(self.case_x / 2)
-                    deltaY = self.case_y - 2
-                self.print_arrow(move, self.case_x * i + deltaX, self.case_y * j + deltaY, 18)
+                    deltaX = int(self.sizeCellX / 2)
+                    deltaY = self.sizeCellY - 2
+                self.print_arrow(move, self.sizeCellX * i + deltaX, self.sizeCellY * j + deltaY, 18)
         pygame.display.flip()
         self.print(dungeon, player)
 
@@ -200,7 +200,7 @@ class Graphics:
                     continue
                 st = State(player.treasure, player.key, player.sword, (i, j))
                 text = self.font.render(str(pdm.nodes[st].getMaxAction()[1]), 1, (255, 0, 0))
-                self.window.blit(text, (self.case_x * i + 7, self.case_y * j + 7))
+                self.window.blit(text, (self.sizeCellX * i + 7, self.sizeCellY * j + 7))
         pygame.display.flip()
 
     # Returns the move played by the player when using user's commands
