@@ -171,7 +171,7 @@ class Graphics:
                 if dungeon.is_wall(i, j):
                     continue
                 st = State(player.treasure, player.key, player.sword, (i, j))
-                if st not in pdmMovement.strat.keys():
+                if st not in pdmMovement.policy.keys():
                     continue
                 move = pdmMovement.get_next_move(st)
                 deltaX = 0

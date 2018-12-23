@@ -38,14 +38,52 @@ def get_creation_proba_cell(c):
 
 # The class of the dungeon defined by its size (x, y) and a grid a cells
 class Dungeon:
-    def __init__(self, x, y):
+    def __init__(self, x, y, name):
         self.x = x
         self.y = y
         self.cells = np.tile(Cell.EMPTY, [x, y])
+        self.name = name
+
+    def __eq__(self, other):
+        return self.name == other.name
+
+    def __hash__(self) -> int:
+        return 2 * hash(self.x) + 4 * hash(self.y) + 8 * hash(self.name) 
 
     # Returns true if the position (x, y) is a wall or is outside the dungeon
     def is_wall(self, x, y):
         return x < 0 or x >= self.x or y < 0 or y >= self.y or self.cells[x, y] == Cell.WALL
+
+    # Write the dungeon into a file
+    def write(self, fileName):
+        file = open(fileName, "w")
+        file.write(str(self.x) + " " + str(self.y) + "\n")
+        for i in range(self.x):
+            for j in range(self.y):
+                if self.cells[i, j] == Cell.WALL:
+                    file.write("w")
+                elif self.cells[i, j] == Cell.TREASURE:
+                    file.write("t")
+                elif self.cells[i, j] == Cell.START:
+                    file.write("o")
+                elif self.cells[i, j] == Cell.ENEMY:
+                    file.write("e")
+                elif self.cells[i, j] == Cell.PORTAL:
+                    file.write("p")
+                elif self.cells[i, j] == Cell.PLATFORM:
+                    file.write("_")
+                elif self.cells[i, j] == Cell.CRACKS:
+                    file.write("c")
+                elif self.cells[i, j] == Cell.TRAP:
+                    file.write("r")
+                elif self.cells[i, j] == Cell.SWORD:
+                    file.write("s")
+                elif self.cells[i, j] == Cell.KEY:
+                    file.write("k")
+                elif self.cells[i, j] == Cell.EMPTY:
+                    file.write(" ")
+            file.write("\n")
+        file.close()
 
 # Create a dungeon based on a dungeon file
 def load_dungeon(file):
@@ -53,7 +91,7 @@ def load_dungeon(file):
         i = 0
         j = 0
         size = file.readline().split(' ')
-        dungeon = Dungeon(int(size[0]), int(size[1]))
+        dungeon = Dungeon(int(size[0]), int(size[1]), file)
         for ligne in file.readlines():
             for c in ligne:
                 if c == 'w':
@@ -83,7 +121,7 @@ def load_dungeon(file):
 
 # Create a dungeon at random 
 def random_dungeon_generation(x, y):
-    d = Dungeon(x, y)
+    d = Dungeon(x, y, "Random")
     # Treasure at top left corner and start at bottom right corner
     d.cells[0, 0] = Cell.TREASURE
     d.cells[x - 1, y - 1] = Cell.START

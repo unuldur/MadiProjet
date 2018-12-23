@@ -17,7 +17,7 @@ class State:
                and self.pos == other.pos
 
     def __hash__(self) -> int:
-        return 2 * hash(self.pos) + 4 * hash(self.sword) + 8 * hash(self.treasure) + 16 * hash(self.key) 
+        return 2 * hash(self.pos) + 4 * hash(self.sword) + 8 * hash(self.treasure) + 16 * hash(self.key)
 
     # Returns the evaluation of the state: 1000 if winnig position, -1000 if dead and -1 elsewhere
     def evaluate(self, dungeon):

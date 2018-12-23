@@ -4,6 +4,7 @@ from player import Player, GameStatus
 from solverPDM import *
 from dungeon import random_dungeon_generation, load_dungeon
 from qlearning import learningPDM
+from bench import bench
 import argparse
 import time
 import sys
@@ -54,7 +55,7 @@ def print_PDM(dungeon, g, gurobi = False):
     if gurobi:
         strat, value = pl_algo(dungeon, pdm, 0.9)
     else:
-        strat, value = iteration_algo(dungeon, pdm, 1, 0.001)
+        strat, value = iteration_algo(dungeon, pdm, 1, 1)
     pdmMove = PdmMovement(strat)
 
     while True:
@@ -105,7 +106,12 @@ def main():
     parser.add_argument('--pdmGurobi', action = 'store_true', help = "Solve the dungeon with Gurobi.")
     parser.add_argument('--qLearn', action = 'store_true', help = "Solve the dungeon with Q-Learning.")
     parser.add_argument('--count', action = 'store_true', help = "Try again and again to win the game.")
+    parser.add_argument('--bench', action = 'store_true', help = "Run the benchs.")
     args = vars(parser.parse_args())
+
+    if args['bench']:
+        bench()
+        return
 
     if args['d']:
         print("Loading dungeon " + args['d'] + ".")
