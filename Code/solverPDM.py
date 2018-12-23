@@ -72,8 +72,9 @@ def iteration_algo(dungeon, pdm, gamma, e):
     return policy, nodes_value
 
 # PDM solver using integer programming
-def pl_algo(dungeon, pdm, gamma):
+def pl_algo(dungeon, pdm, gamma, quiet = False):
     model = Model("PDM solver")
+    model.setParam('OutputFlag', not quiet)
     variables = dict()
     bellmans = []
     obj = LinExpr()

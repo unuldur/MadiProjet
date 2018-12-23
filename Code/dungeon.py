@@ -91,7 +91,7 @@ def load_dungeon(file):
         i = 0
         j = 0
         size = file.readline().split(' ')
-        dungeon = Dungeon(int(size[0]), int(size[1]), file)
+        dungeon = Dungeon(int(size[0]), int(size[1]), str(file))
         for ligne in file.readlines():
             for c in ligne:
                 if c == 'w':

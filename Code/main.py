@@ -76,6 +76,7 @@ def print_PDM(dungeon, g, gurobi = False):
 # Run and print the game played by the user's inputs
 def print_playerInput(dungeon, g):
     p = Player(dungeon.x - 1, dungeon.y - 1)
+    g.print(dungeon, p)
     finish = False
     while not finish:
         gameState = p.move(g, dungeon, g)
@@ -100,8 +101,8 @@ def main():
     print("|                       Magic Maze                       |")
     print("==========================================================")
     parser = argparse.ArgumentParser()
-    parser.add_argument('-d', type = int, help = "The dungeon file to play with.")
-    parser.add_argument('-r', help = "Use a square random dungeon of the given size.")
+    parser.add_argument('-d', help = "The dungeon file to play with.")
+    parser.add_argument('-r', type = int, help = "Use a square random dungeon of the given size.")
     parser.add_argument('--pdmIteVal', action = 'store_true', help = "Solve the dungeon with value iteration.")
     parser.add_argument('--pdmGurobi', action = 'store_true', help = "Solve the dungeon with Gurobi.")
     parser.add_argument('--qLearn', action = 'store_true', help = "Solve the dungeon with Q-Learning.")
@@ -128,7 +129,7 @@ def main():
         parser.print_help()
         dungeon = random_dungeon_generation(5, 5)
 
-    g = Graphics(800, 1000, dungeon)
+    g = Graphics(800, 1000, dungeon, 50)
 
     if args['pdmIteVal']:
         g.print_footer("Welcome to Magic Maze, you are looking at the moves computed by the PDM resolution.")

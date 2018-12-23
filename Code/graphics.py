@@ -5,7 +5,7 @@ import pygame
 
 # Graphic class that handles all that everything displayed
 class Graphics:
-    def __init__(self, height, width, dungeon):
+    def __init__(self, height, width, dungeon, waitingTime):
         pygame.init()
         # Set the size of the window with additional space for the footer
         self.window = pygame.display.set_mode((width, height + int(height / 10)))
@@ -14,6 +14,8 @@ class Graphics:
         # Set the size of a cell
         self.sizeCellX = self.width / dungeon.x
         self.sizeCellY = self.height / dungeon.y
+        # Set waiting time between 2 moves
+        self.waitingTime = waitingTime
 
         # Set the font used for text
         self.font = pygame.font.SysFont("arial", min(20, int(width / 50)))
@@ -114,7 +116,7 @@ class Graphics:
     # Print the dungeon and the player position
     def print(self, dungeon, player):
         event = pygame.event.poll()
-        pygame.time.wait(50)
+        pygame.time.wait(self.waitingTime)
         if event.type == pygame.QUIT:
             return False
         self.window.fill((255, 255, 255))
