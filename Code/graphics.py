@@ -2,10 +2,11 @@ from dungeon import Cell
 from player import Movement
 from state import State
 import pygame
+import sys
 
 # Graphic class that handles all that everything displayed
 class Graphics:
-    def __init__(self, height, width, dungeon, waitingTime):
+    def __init__(self, height, width, dungeon, waitingTime, life, maxLife):
         pygame.init()
         # Set the size of the window with additional space for the footer
         self.window = pygame.display.set_mode((width, height + int(height / 10)))
@@ -20,6 +21,8 @@ class Graphics:
         # Set the font used for text
         self.font = pygame.font.SysFont("arial", min(20, int(width / 50)))
         self.footerText = ""
+        self.life = life
+        self.maxLife = maxLife
         # Load all the pictures used
         self.pictures = {}
         self.pictures["start"] = pygame.image.load("resources/tileStart.jpg").convert()
@@ -57,11 +60,16 @@ class Graphics:
     def print_footer(self, message):
         if (message != self.footerText):
             self.footerText = message
+        message = self.footerText + "  |  Player life = " + str(self.life) + "/" + str(self.maxLife)
         pygame.draw.rect(self.window, (220, 220, 220), ((0, self.height), (self.width, int(self.height / 10))))
         text = self.font.render(message, 1, (0, 0, 0))
         self.window.blit(text, (int(self.width / 2 - text.get_rect().width / 2), 
             int(self.height + int(self.height / 20) - text.get_rect().height / 2)))
         pygame.display.flip()
+
+    def update_footer_life(self, newLife):
+        self.life = newLife
+        self.print_footer(self.footerText)
 
     # Print a message in the middle of the screen
     def print_message(self, message):
@@ -172,7 +180,7 @@ class Graphics:
             for j in range(dungeon.y):
                 if dungeon.is_wall(i, j):
                     continue
-                st = State(player.treasure, player.key, player.sword, (i, j))
+                st = State(player.treasure, player.key, player.sword, (i, j), player.life)
                 if st not in pdmMovement.policy.keys():
                     continue
                 move = pdmMovement.get_next_move(st)
@@ -192,6 +200,7 @@ class Graphics:
                     deltaY = self.sizeCellY - 2
                 self.print_arrow(move, self.sizeCellX * i + deltaX, self.sizeCellY * j + deltaY, 18)
         pygame.display.flip()
+        # self.screenShot(dungeon.name)
         self.print(dungeon, player)
 
     # Print the value of each cell, can only be used with a qlearning pdm
@@ -204,6 +213,19 @@ class Graphics:
                 text = self.font.render(str(pdm.nodes[st].getMaxAction()[1]), 1, (255, 0, 0))
                 self.window.blit(text, (self.sizeCellX * i + 7, self.sizeCellY * j + 7))
         pygame.display.flip()
+
+    def print_PDM_values(self, dungeon, player, pdmValue):
+        for i in range(dungeon.x):
+            for j in range(dungeon.y):
+                if dungeon.is_wall(i, j):
+                    continue
+                st = State(player.treasure, player.key, player.sword, (i, j), player.life)
+                text = self.font.render(str(int(pdmValue[st])), 1, (255, 255, 255))
+                self.window.blit(text, (self.sizeCellX * i + 7, self.sizeCellY * j + 7))
+        pygame.display.flip()
+
+    def screenShot(self, fileName):
+        pygame.image.save(self.window, fileName + ".jpeg")
 
     # Returns the move played by the player when using user's commands
     def get_next_move(self, state):

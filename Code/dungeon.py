@@ -54,6 +54,13 @@ class Dungeon:
     def is_wall(self, x, y):
         return x < 0 or x >= self.x or y < 0 or y >= self.y or self.cells[x, y] == Cell.WALL
 
+    # Returns the position of the key
+    def getKeyPos(self):
+        for i in range(self.x):
+            for j in range(self.y):
+                if self.cells[i, j] == Cell.KEY:
+                    return (i, j)
+
     # Write the dungeon into a file
     def write(self, fileName):
         file = open(fileName, "w")
@@ -91,7 +98,7 @@ def load_dungeon(file):
         i = 0
         j = 0
         size = file.readline().split(' ')
-        dungeon = Dungeon(int(size[0]), int(size[1]), str(file))
+        dungeon = Dungeon(int(size[0]), int(size[1]), str(file.name))
         for ligne in file.readlines():
             for c in ligne:
                 if c == 'w':
@@ -157,28 +164,37 @@ def choose_pos(dungeon):
         y = rand.randint(0, dungeon.y - 1)
     return x, y
 
-# Test if the dungeon has a solution: there exists a path from start to key to treasure to start
+def isReachable(dungeon, start, target):
+    visitedPos = []
+    posToTest = []
+    posToTest.append(start)
+    while len(posToTest) > 0:
+        currentPos = posToTest.pop()
+        for i, j in [(-1, 0), (1, 0), (0, 1), (0, -1)]:
+            testingPos = (currentPos[0] + i, currentPos[1] + j)
+            # If we already checked the cell, we skip it
+            if testingPos in visitedPos:
+                continue
+            visitedPos.append(testingPos)
+            # If it is impossible to pass through the cell (wall or crack), we skip it
+            if (dungeon.is_wall(testingPos[0], testingPos[1]) or 
+                dungeon.cells[testingPos[0], testingPos[1]] == Cell.CRACKS):
+                continue
+            # If we've reached the target, we're done
+            if (testingPos == target):
+                return True
+            posToTest.append(testingPos)
+    return False
+
+
+# Test if the dungeon has a solution: there exists a path from every pos to the start and from key to treasure
 def test_dungeon(dungeon):
     if dungeon.cells[dungeon.x - 1, dungeon.y - 1] != Cell.START or dungeon.cells[0, 0] != Cell.TREASURE:
         return False
-    cellsToTest = [(0, 0)]
-    checkedCells = [(0, 0)]
-    access_start = False
-    access_key = False
-    while len(cellsToTest) > 0 and (not access_key or not access_start):
-        currentCell = cellsToTest.pop()
-        for i, j in [(-1, 0), (1, 0), (0, 1), (0, -1)]:
-            testingCell = (currentCell[0] + i, currentCell[1] + j)
-            # If we already checked the cell, we skip it
-            if testingCell in checkedCells:
-                continue
-            checkedCells.append(testingCell)
-            # If it is impossible to pass through the cell (wall or crack), we skip it
-            if dungeon.is_wall(testingCell[0], testingCell[1]) or dungeon.cells[testingCell[0], testingCell[1]] == Cell.CRACKS:
-                continue
-            if dungeon.cells[testingCell] == Cell.KEY:
-                access_key = True
-            if dungeon.cells[testingCell] == Cell.START:
-                access_start = True
-            cellsToTest.append(testingCell)
-    return access_start and access_key
+    for i in range(dungeon.x):
+        for j in range(dungeon.y):
+            if (i, j) != (dungeon.x - 1, dungeon.y - 1):
+                if dungeon.cells[i, j] != Cell.WALL and dungeon.cells[i, j] != Cell.CRACKS:
+                    if not isReachable(dungeon, (i, j), (dungeon.x - 1, dungeon.y - 1)):
+                        return False
+    return isReachable(dungeon, dungeon.getKeyPos(), (0, 0)) and isReachable(dungeon, (0, 0), dungeon.getKeyPos())

@@ -12,10 +12,10 @@ class learningPDM:
             self.dungeon = dungeon
             self.action = dict()            # dict(float), keys are actions and value the value gained from the action
             # Initializes the actions: if we are not the dead state, we have actions
-            if (self.state.pos[0] != -9 and self.state.pos[1] != -9):
+            if (self.state.life > 0):
                 for move in [Movement.LEFT, Movement.RIGHT, Movement.TOP, Movement.DOWN]:
                     if not dungeon.is_wall(self.state.pos[0] + move.value[0], self.state.pos[1] + move.value[1]):
-                    	# Initial value of a node is 0
+                        # Initial value of a node is 0
                         self.action[move] = 0.0
 
         def __repr__(self):
@@ -39,10 +39,10 @@ class learningPDM:
                 if val >= maxVal:
                     maxVal = val
                     bestAction = move
-            return (bestAction, maxVal) if maxVal != -10000.0 else None
+            return (bestAction, maxVal) if maxVal != -10000.0 else (None, 0)
 
     # Initializes a PDM by creating all the nodes plus the dead node
-    def __init__(self, dungeon, learningRate):
+    def __init__(self, dungeon, learningRate, maxLife):
         self.lastMove = None
         self.dungeon = dungeon
         self.nodes = dict()
@@ -52,16 +52,9 @@ class learningPDM:
                     for t in [True, False]:
                         for k in [True, False]:
                             for s in [True, False]:
-                                state = State(t, k, s, (i, j))
-                                self.nodes[state] = self.Node(state, dungeon, learningRate)
-        # Plus the dead state (-9, -9)
-        i = -9
-        j = -9
-        for t in [True, False]:
-            for k in [True, False]:
-                for s in [True, False]:
-                    state = State(t, k, s, (i, j))
-                    self.nodes[state] = self.Node(state, dungeon, learningRate)
+                                for l in range(maxLife + 1):
+                                    state = State(t, k, s, (i, j), l)
+                                    self.nodes[state] = self.Node(state, dungeon, learningRate)
         
     # Add an observation and update the value of the node concerned accordingly
     def addObservation(self, previousState, currentState):

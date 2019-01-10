@@ -51,7 +51,7 @@ def stopIteVal(previousValues, currentValues):
     return bestVal
 
 # Value iteration algorithm
-def iteration_algo(dungeon, pdm, gamma, e):
+def iteration_algo(dungeon, pdm, gamma, e, countIte = False):
     bellmans = dict()
     nodes_value = dict()
     # For each node of the PDM Bellman equations are initialized
@@ -60,8 +60,10 @@ def iteration_algo(dungeon, pdm, gamma, e):
         nodes_value[s] = 0
     policy = dict()
     last = None
+    numIte = 0
     # While the stopping criteria is not met we udpate the node values given their current one and the bellman equations
     while stopIteVal(last, nodes_value) > e:
+        numIte += 1
         new_nodes_value = dict()
         for s in bellmans.keys():
             val, action = bellmans[s].next_value(nodes_value, dungeon)
@@ -69,6 +71,9 @@ def iteration_algo(dungeon, pdm, gamma, e):
             policy[s] = action
         last = nodes_value
         nodes_value = new_nodes_value
+    print("PDM solved with Value Iteration in " + str(numIte) + " iterations.")
+    if countIte:
+        return numIte
     return policy, nodes_value
 
 # PDM solver using integer programming
@@ -92,16 +97,13 @@ def pl_algo(dungeon, pdm, gamma, quiet = False):
             model.addConstr(variables[s] >= c)
     # Solves the integer program and gets the state values
     model.optimize()
-    node_value = dict()
-    for v in model.getVars():
-        state = None
-        for k in variables.keys():
-            if v.varName == variables[k].varName:
-                state = k
-                break
-        node_value[state] = v.x
 
-    # Returns the optimal policy
+    # Get the state values
+    node_value = dict()
+    for s in pdm.nodes.keys():
+        node_value[s] = model.getVarByName(str(s)).x
+
+    # Compute the optimal policy
     policy = dict()
     for (b, s) in bellmans:
         _, action = b.next_value(node_value, dungeon)
